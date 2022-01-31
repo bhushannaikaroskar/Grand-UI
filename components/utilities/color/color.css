@@ -1,0 +1,19 @@
+
+:root{
+    --WHITE :#ffffff;
+    --OFF-WHITE: #eeeeee;
+    --LIGHT-GREY: #dedede;
+    --GREY: #a3a3a3;
+    --DARK-GREY: #616161;
+    --OFF-BLACK : #232323;
+    --BLACK : #000000;
+
+    --PRIMARY-300: #4be190;  
+
+    --COLOR-ERROR:#ff8989; 
+    --COLOR-ERROR-DARK:#f02d2d;
+    --COLOR-WARNING:#f7dc8c;
+    --COLOR-WARNING-DARK:#ebb71c;
+    --COLOR-SUCCESS:#91ffb4;
+    --COLOR-SUCCESS-DARK:#00c03d;
+}

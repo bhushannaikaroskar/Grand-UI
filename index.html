@@ -4,10 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
     <link rel="stylesheet" href="style.css">
     <title>Component Library Documentation</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Avatar</h1>
+        <hr>
+        
+        <h2>Avatar with 6 sizes</h2>
+        <br>
+        <div class="component">
+            <div class="avatar avatar-size-xxl ">
+                <img src="./assets/photos/stock-photo.jpg" class="avatar-image" alt="">
+            </div>
+            <div class="avatar avatar-size-xl">
+                <img src="./assets/photos/stock-photo2.jpg"class="avatar-image" alt="">
+            </div>
+            <div class="avatar avatar-size-lg">
+                <img src="./assets/photos/stock-photo3.jpg"class="avatar-image" alt="">
+            </div>
+            <div class="avatar">
+                <img src="./assets/photos/stock-photo4.jpg"class="avatar-image" alt="">
+            </div>
+            <div class="avatar avatar-size-sm">
+                <img src="./assets/photos/stock-photo.jpg"class="avatar-image" alt="">
+            </div>
+            <div class="avatar avatar-size-xs">
+                <img src="./assets/photos/stock-photo2.jpg"class="avatar-image" alt="">
+            </div>
+        </div>
+        
+        <h2>Avatar with Text</h2>
+        <br>
+        <div class="component">
+            <div class="avatar">
+                <p>XXL</p>
+            </div><div class="avatar ">
+                <p>XL</p>
+            </div>
+            <div class="avatar">
+                <p>LG</p>
+            </div>
+            <div class="avatar">
+                <p>MD</p>
+            </div>
+        </div>
+        
+        <h2>Avatar with Badges</h2>
+        <br>
+        <div class="component">
+            <div class="avatar avatar-shadow">
+                <img src="./assets/photos/stock-photo.jpg" class="avatar-image" alt="">
+                <span class="avatar-badge badge-idle"></span>
+            </div>
+            <div class="avatar avatar-shadow">
+                <img src="./assets/photos/stock-photo2.jpg "class="avatar-image" alt="">
+                <span class="avatar-badge badge-online"></span>
+
+            </div>
+            <div class="avatar avatar-shadow">
+                <img src="./assets/photos/stock-photo3.jpg"class="avatar-image" alt="">
+                <span class="avatar-badge badge-dnd"></span>
+            </div>
+        </div>
+
+        
+        <h2>Square Avatars</h2>
+        <br>
+        <div class="component">
+            <div class="avatar avatar-square">
+                <img src="./assets/photos/stock-photo.jpg" class="avatar-image" alt="">
+            </div>
+            <div class="avatar avatar-square">
+                <img src="./assets/photos/stock-photo2.jpg"class="avatar-image" alt="">
+            </div>
+            <div class="avatar avatar-square">
+                <img src="./assets/photos/stock-photo3.jpg"class="avatar-image" alt="">
+            </div>
+            <div class="avatar avatar-square">
+                <img src="./assets/photos/stock-photo4.jpg"class="avatar-image" alt="">
+            </div>
+        </div><br><br>
+
+        <h1>Alert</h1>
+        <hr><br>
+        <h2>Alert with different colors</h2>
+        <br>
+        <div class="component component-vertical">
+            <div class="alert alert-color-success">
+                <span class="material-icons alert-icon">check_circle</span>
+                <div class="alert-body">
+                    <p class="alert-text">Success. Action is completed.</p>
+                </div>
+            </div>
+
+            <div class="alert alert-color-warning">
+                <span class="material-icons alert-icon">warning</span>
+                <div class="alert-body">
+                    <p class="alert-text">Warning! Action may cause inconsistencies.</p>
+                </div>
+            </div>
+
+            <div class="alert alert-color-error">
+                <span class="material-icons alert-icon">error</span>
+                <div class="alert-body">
+                    <p class="alert-text">Error. Action Invalid</p>
+                </div>
+            </div>
+            <div class="alert">
+                <span class="material-icons alert-icon">help</span>
+                <div class="alert-body">
+                    <p class="alert-text">Info. This is a default color</p>
+                </div>
+                <button class="material-icons alert-close">close</button>
+            </div>
+        </div>
+        
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
+
