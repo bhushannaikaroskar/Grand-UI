@@ -16,4 +16,6 @@
     --COLOR-WARNING-DARK:#ebb71c;
     --COLOR-SUCCESS:#91ffb4;
     --COLOR-SUCCESS-DARK:#00c03d;
+
+    --COLOR-BORDER: var(--OFF-WHITE);
 }
