@@ -8,10 +8,10 @@
     width: 100%;
     max-width: 70rem;
     
-    color: var(--DARK-GREY);
-    background-color: var(--LIGHT-GREY);
-    border-left: 5px solid var(--GREY);
-    border-right: 5px solid var(--LIGHT-GREY);
+    color: var(--PRIMARY-300);
+    background-color: var(--PRIMARY-100);
+    border-left: 5px solid var(--PRIMARY-300);
+    border-right: 5px solid var(--PRIMARY-100);
 }
 
 .alert-bg-default{
