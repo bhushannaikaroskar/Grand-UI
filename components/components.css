@@ -1,6 +1,8 @@
 
 @import url(./utilities/color/color.css);
 
-
 @import url(./avatar/avatar.css);
 @import url(./alert/alert.css);
+@import url(./badge/badge.css);
+@import url(./button/button.css);
+
