@@ -1,0 +1,136 @@
+.btn {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: box-shadow 0.2s ease-in, background-color 0.2s ease-in,
+        border 0.2s ease-in, color 0.2s ease-in;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-default {
+    color: var(--WHITE);
+    background-color: var(--OFF-BLACK);
+    border: 2px solid var(--OFF-BLACK);
+}
+
+.btn-default:hover {
+    background-color: var(--BLACK);
+}
+
+.btn-primary {
+    color: var(--OFF-BLACK);
+    background-color: var(--PRIMARY-400);
+    border: 2px solid var(--PRIMARY-400);
+}
+
+.btn-primary:hover {
+    background-color: var(--PRIMARY-500);
+    border: 2px solid var(--PRIMARY-500);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--COLOR-BORDER-1);
+    color: var(--COLOR-TEXT);
+}
+
+.btn-outline:hover {
+    background-color: var(--OFF-BLACK);
+    color: var(--WHITE);
+    border: 2px solid var(--COLOR-BORDER-1);
+}
+
+.btn-outline.btn-outline-primary {
+    background-color: transparent;
+    border: 2px solid var(--PRIMARY-400);
+    color: var(--PRIMARY-800);
+}
+
+.btn-outline.btn-outline-primary:hover {
+    background-color: var(--PRIMARY-300);
+    border: 2px solid var(--PRIMARY-300);
+    color: var(--OFF-BLACK);
+}
+
+.btn.btn-float {
+    border-radius: 999px;
+    box-shadow: 0 5px 10px 3px var(--COLOR-SHADOW-PRIMARY-400);
+    width: fit-content;
+    aspect-ratio: 1/1;
+}
+
+.btn-float-left,
+.btn-float-right,
+.btn-float-bottom,
+.btn-float-top {
+    position: fixed;
+}
+
+.btn-float-left {
+    left: 4rem;
+}
+
+.btn-float-right {
+    right: 4rem;
+}
+
+.btn-float-bottom {
+    bottom: 4rem;
+}
+
+.btn-float-top {
+    top: 4rem;
+}
+
+.btn[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.btn-icon {
+    color: var(--COLOR-TEXT);
+    background-color: transparent;
+    border: none;
+    border-radius: 999px;
+    transition: background-color 0.2s ease-out;
+    width: fit-content;
+    aspect-ratio: 1/1;
+}
+
+.btn-icon:hover {
+    color: var(--PRIMARY-300);
+    background-color: var(--COLOR-SHADOW-PRIMARY);
+}
+
+.btn-icon-lg {
+    font-size: 3.2rem;
+}
+
+.btn-icon-sm {
+    font-size: 1.6rem;
+}
+
+/* links */
+
+.btn-link-primary {
+    color: var(--PRIMARY-500);
+}
+
+.btn-link-primary:hover {
+    color: var(--PRIMARY-800);
+}
+
+.btn-link-secondary {
+    color: var(--COLOR-TEXT-2);
+}
+
+.btn-link-secondary:hover {
+    color: var(--PRIMARY-400);
+}

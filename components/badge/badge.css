@@ -1,0 +1,82 @@
+.badge-container {
+    position: relative;
+    width: max-content;
+    font-size: 1.6rem;
+}
+
+.badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: -1.2rem;
+    right: -1rem;
+    border-radius: 100px;
+    background-color: var(--PRIMARY-200);
+    font-size: 1rem;
+    max-width: 8px;
+    padding: 8px;
+    min-height: 5px;
+    aspect-ratio: 1/1;
+    color: #000;
+    font-weight: 500;
+    box-sizing: content-box;
+}
+
+.badge-square {
+    border-radius: 3px;
+}
+
+.badge-md {
+    top: -1.4rem;
+    right: -12px;
+    font-size: 11px;
+    min-height: 10px;
+    max-width: 10px;
+}
+
+.badge-lg {
+    top: -16px;
+    right: -14px;
+    font-size: 12px;
+    min-height: 12px;
+    max-width: 14px;
+}
+
+.badge-icon {
+    font-size: 2.4rem;
+    margin: 1rem;
+    position: relative;
+    width: max-content;
+}
+
+.badge-text {
+    margin: 1rem;
+    position: relative;
+    width: max-content;
+    padding: 4px;
+}
+
+.badge-red {
+    background-color: var(--COLOR-ERROR-DARK);
+    color: var(--WHITE);
+}
+
+.badge-yellow {
+    background-color: var(--COLOR-WARNING-DARK);
+    color: var(--WHITE);
+}
+
+.badge-green {
+    background-color: var(--COLOR-SUCCESS-DARK);
+    color: var(--WHITE);
+}
+
+.badge-text-hide {
+    color: transparent;
+}
+
+.badge-left {
+    left: -1rem;
+}
