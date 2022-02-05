@@ -1,0 +1,253 @@
+.card {
+    font-size: 1.6rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    max-width: 25rem;
+    min-height: 40rem;
+    max-height: 40rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px var(--COLOR-SHADOW-2);
+    background-color: var(--WHITE);
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 5px 3px var(--COLOR-SHADOW-2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1);
+}
+
+/* card badge */
+
+.card-badge {
+    position: absolute;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    top: 10px;
+    padding: 5px 1rem;
+    background-color: var(--COLOR-WARNING-DARK);
+}
+
+/* card dismiss button */
+
+.card-dismiss-btn {
+    color: var(--GREY);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0;
+}
+
+/* card text overlay */
+
+.card-text-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--COLOR-SHADOW-3);
+    color: var(--WHITE);
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    justify-content: center;
+    transition: visibility 0.2s ease-in, opacity 0.5s ease-in;
+    border-radius: 8px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.card-text-overlay:hover {
+    opacity: 1;
+}
+
+/* card wishlist button */
+
+.card-favorite {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0;
+    color: var(--GREY);
+}
+
+/* horizontal card */
+
+.card-horizontal {
+    flex-direction: row;
+    max-width: 45rem;
+    width: 100%;
+    min-height: 20rem;
+    max-height: 20rem;
+}
+
+.card-horizontal .card-img-wrapper {
+    max-width: 20rem;
+}
+
+.card-horizontal .card-price {
+    flex-direction: column;
+    gap: 0px;
+}
+
+.card-horizontal .card-discount-price {
+    font-size: 2.4rem;
+}
+
+.card-horizontal .card-cta {
+    flex-grow: 1;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+/* card list item */
+
+.card-list-item {
+    flex-direction: row;
+    min-width: 100%;
+    min-height: 20rem;
+    max-height: 20rem;
+}
+
+.card-list-item .card-content-wrapper {
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 3rem;
+}
+
+.card-list-item .card-content {
+    flex-grow: 1;
+}
+.card-list-item .card-content .card-title {
+    font-size: 2.2rem;
+}
+
+.card-list-item .card-content .card-description{
+    -webkit-line-clamp: 5;
+}
+
+.card-list-item .card-cta {
+    flex-basis: 30%;
+    flex-grow: 0;
+}
+
+.card-list-item .card-img-wrapper {
+    max-width: 20rem;
+}
+
+.card-list-item .card-price {
+    flex-direction: column;
+    align-items: space-between;
+    gap: 5px;
+}
+
+/* card image wrapper */
+
+.card-img-wrapper {
+    /* z-index: -1; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-shrink: 0;
+    aspect-ratio: 10/9;
+    overflow: hidden;
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-grow: 2;
+    padding: 1.5rem;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-title {
+    font-size: 1.8rem;
+}
+
+.card-description {
+    display: -webkit-box;
+    font-size: 1.3rem;
+    color: var(--DARK-GREY);
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /* white-space: nowrap; */
+}
+
+.card-cta {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: space-between;
+}
+
+.card-price {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-discount-price {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.card-price-details {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.card-original-price {
+    font-size: 12px;
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.card-discount-percentage {
+    color: var(--COLOR-SUCCESS-DARK);
+    font-weight: 600;
+}
+
+.card-buttons {
+    display: flex;
+}
+
+.card-btn {
+    padding: 5px 1rem;
+}
+
+/* text card */
+
+.text-card {
+    min-height: auto;
+    max-height: auto;
+}
+
+.text-card .card-title {
+    font-size: 2rem;
+}
+
+.text-card .text-card-description {
+    font-size: 1.5rem;
+    color: var(--DARK-GREY);
+    -webkit-line-clamp: unset;
+}
