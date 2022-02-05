@@ -106,7 +106,14 @@
 
 .btn-icon:hover {
     color: var(--PRIMARY-300);
-    background-color: var(--COLOR-SHADOW-PRIMARY);
+}
+
+.btn-icon.btn-icon-red:hover {
+    color: var(--COLOR-ERROR-DARK);
+}
+
+.btn-icon:hover {
+    color: var(--PRIMARY-400);
 }
 
 .btn-icon-lg {
