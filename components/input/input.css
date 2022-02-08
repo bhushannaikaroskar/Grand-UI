@@ -45,6 +45,7 @@
 .input-color-success {
     outline: 2px solid var(--COLOR-SUCCESS);
 }
+
 .input-color-success + .input-message {
     color: var(--COLOR-SUCCESS-DARK);
 }
@@ -52,6 +53,7 @@
 .input-color-warning {
     outline: 2px solid var(--COLOR-WARNING-DARK);
 }
+
 .input-color-warning + .input-message {
     color: var(--COLOR-WARNING-DARK);
 }
