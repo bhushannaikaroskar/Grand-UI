@@ -22,15 +22,17 @@
     outline-color: var(--OFF-BLACK);
 }
 
-.input-label{
-    font-size: 1.4rem;
+.input-label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.4rem;
 }
+
+/* INPUT WITH MESSAGE AND COLORS */
 
 .input-message {
     font-size: 1.2rem;
 }
-
-/* input with messages and colors */
 
 .input-color-error {
     outline: 2px solid var(--COLOR-ERROR);
@@ -47,7 +49,6 @@
     color: var(--COLOR-SUCCESS-DARK);
 }
 
-
 .input-color-warning {
     outline: 2px solid var(--COLOR-WARNING-DARK);
 }
@@ -57,12 +58,11 @@
 
 /* INPUT SIZE PARENT */
 
-.input-width-100{
-    width:100%
+.input-width-100 {
+    width: 100%;
 }
 
-
-/* textarea */
+/* TEXTAREA */
 
 .input-field-area {
     width: 100%;
