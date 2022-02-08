@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* HEADING */
+
+.h1,
+h1 {
+    font-size: 3.2rem;
+}
+
+.h2,
+h2 {
+    font-size: 2.4rem;
+}
+
+.h3,
+h3 {
+    font-size: 1.87rem;
+}
+
+.h4,
+h4 {
+    font-size: 1.6rem;
+}
+
+.h5,
+h5 {
+    font-size: 1.33rem;
+}
+
+.h6,
+h6 {
+    font-size: 1.07rem;
+}
+
+/* FONT WEIGHT */
+
+.fw-300,
+.font-light {
+    font-weight: 300;
+}
+
+.fw-400,
+.font-regular {
+    font-weight: 400;
+}
+
+.fw-500,
+.font-medium {
+    font-weight: 500;
+}
+
+.fw-600,
+.font-semi-bold {
+    font-weight: 600;
+}
+
+.fw-700,
+.font-bold {
+    font-weight: 700;
+}
+
+.fw-800,
+.font-extra-bold {
+    font-weight: 900;
+}
+
+/* FONT COLOR */
+
+.font-error {
+    color: var(--COLOR-ERROR-DARK);
+}
+
+.font-success {
+    color: var(--COLOR-SUCCESS-DARK);
+}
+
+.font-warning {
+    color: var(--COLOR-WARNING-DARK);
+}
+
+.font-primary {
+    color: var(--PRIMARY-400);
+}
+
+.font-gray {
+    color: var(--GREY);
+}
+
+/* FONT SIZE */
+
+.font-small {
+    font-size: small;
+}
+
+.font-medium {
+    font-size: medium;
+}
+
+.font-large {
+    font-size: large;
+}
+
+.font-x-large {
+    font-size: x-large;
+}
+
+/* FONT ALIGNMENT */
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.align-left {
+    align-content: left;
+}
+
+.align-center {
+    align-self: center;
+}
+
+.align-right {
+    align-self: end;
+}

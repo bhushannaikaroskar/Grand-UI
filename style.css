@@ -12,15 +12,6 @@
     font-size: 62.5%;
 }
 
-.container>h1{
-    font-size: 3.2rem;
-    margin:1rem 0;
-}
-
-.container>h2{
-    font-size: 2.4rem;
-}
-
 .container{
     max-width: 80rem;
     margin:auto;
@@ -45,4 +36,8 @@
 
 .no-wrap{
     flex-wrap: nowrap;
+}
+
+.flex-stretch{
+    align-items: stretch;
 }
