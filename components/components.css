@@ -1,5 +1,4 @@
 
-@import url(./utilities/utilities.css);
 
 @import url(./avatar/avatar.css);
 @import url(./alert/alert.css);
@@ -8,3 +7,5 @@
 @import url(./card/card.css);
 @import url(./image/image.css);
 @import url(./input/input.css);
+
+@import url(./utilities/utilities.css);
