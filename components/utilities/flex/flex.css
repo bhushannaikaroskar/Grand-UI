@@ -19,6 +19,14 @@
     flex-direction: column-reverse;
 }
 
+.flex-shrink-1{
+    flex-shrink: 1;
+}
+
+.flex-grow-0{
+    flex-grow: 0;
+}
+
 /* JUSTIFY CONTENT */
 
 .justify-content-start{
