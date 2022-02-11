@@ -2,5 +2,8 @@
 
 @import url(./color/color.css);
 @import url(./text-utilities/text-utilities.css);
+@import url(./sizing/sizing.css);
+@import url(./flex/flex.css);
+
 
 
