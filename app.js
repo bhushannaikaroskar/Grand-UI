@@ -17,8 +17,8 @@ const activeTab = (list,listItem) =>{
     document.querySelector(listItem.querySelector("a").getAttribute("href")).style.display = "block";
 }
 
-const alertTab = document.querySelector(".list-item");
-
 arrayOfListItems.forEach((element)=>{
     element.addEventListener("click",(e)=>activeTab(componentList,element))
 })
+
+activeTab(componentList,arrayOfListItems[0]);
