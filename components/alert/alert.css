@@ -14,11 +14,6 @@
     border-right: 5px solid var(--PRIMARY-100);
 }
 
-.alert-bg-default{
-    background-color: var(--WHITE);
-    border-right: none;
-}
-
 .alert-icon{
     display: flex;
     font-size: 2.4rem;
@@ -66,7 +61,10 @@
     border-right: 5px solid var(--COLOR-ERROR);
 }
 
-
+.alert-bg-default{
+    background-color: var(--WHITE);
+    border-right: none;
+}
 
 .alert-close{
     color: var(--DARK-GREY);

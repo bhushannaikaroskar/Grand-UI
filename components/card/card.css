@@ -8,7 +8,7 @@
     max-width: 25rem;
     min-height: 40rem;
     max-height: 40rem;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 1px 1px 5px 1px var(--COLOR-SHADOW-2);
     background-color: var(--WHITE);
     transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
@@ -56,8 +56,12 @@
     justify-content: center;
     transition: visibility 0.2s ease-in, opacity 0.5s ease-in;
     border-radius: 8px;
-    opacity: 0;
+    opacity: 1;
     z-index: 2;
+}
+
+.opacity-0{
+    opacity: 0;
 }
 
 .card-text-overlay:hover {
@@ -226,6 +230,7 @@
 
 .card-buttons {
     display: flex;
+    gap: 1rem;
 }
 
 .card-btn {
