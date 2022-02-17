@@ -156,7 +156,6 @@ pre[class*="language-"] {
 
 .language-markup{
 	border-radius: 3px;
-	
 	max-height: 30rem;
 	overflow-y: scroll ;
 }
