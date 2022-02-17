@@ -8,6 +8,7 @@
 .h1,
 h1 {
     font-size: 3.2rem;
+    /* font-weight: 700; */
 }
 
 .h2,
@@ -87,6 +88,10 @@ h6 {
 
 .font-gray {
     color: var(--GREY);
+}
+
+.font-dark-gray {
+    color: var(--DARK-GREY);
 }
 
 /* FONT SIZE */

@@ -27,6 +27,16 @@
     flex-grow: 0;
 }
 
+.flex-grow-1{
+    flex-grow: 1;
+}
+
+.flex-stretch {
+    align-items: stretch;
+}
+
+
+
 /* JUSTIFY CONTENT */
 
 .justify-content-start{
