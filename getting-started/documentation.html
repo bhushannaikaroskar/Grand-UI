@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/getting-started/prism/prism.css" />
+    <title>Component Library Documentation</title>
+</head>
+
+<body class="doc-body">
+    <nav class="doc-nav nav navbar box-shadow-100 p-2_5 p-y-1">
+        <a class="nav-logo" href="/">
+            <img src="/assets/landing/grand-logo.png" alt="logo" />
+        </a>
+        <ul class="list list-inline">
+            <li class="nav-item">
+                <a class="btn btn-link-secondary justify-content-start font-large" href="/getting-started/documentation.html" >
+                    Documentation
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-link-secondary justify-content-start font-large" href="https://github.com/bhushannaikaroskar/component-library">
+                    Github
+                </a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-link-secondary justify-content-start font-large" >
+                    <span class="material-icons"> dark_mode </span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+    <aside class="doc-sidebar p-2">
+        <ul class="list">
+            <div class="list-tile font-primary font-x-large fw-600">Getting Started</div>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5">
+                    Installation
+                </a>
+            </li>
+        </ul>
+        <p> </p>
+        <ul id="sidebar-list" class="list">
+            <div class="list-tile font-primary font-x-large fw-600">Components</div>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5" href="#avatar">Avatar</a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5" href="#alert"> Alert </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5" href="#badge"> Badge </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"
+                href="#button"> Button </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"
+                href="#cards"> Card </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"
+                href="#image"> Image </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5" href="#input"> Input </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#text-utilities"> Text Utilities </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#lists">  Lists </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#navbar">  Navigation </a>
+            </li>
+        </ul>
+    </aside>
+    <main class="doc-main">
+        <div id="avatar">
+            <h1 class="doc-header">Avatar</h1>
+
+            <p class="doc-para">
+                Avatars are basically used to display profile pictures are user in general. We have different formats for avatars that comes with various combination.
+            </p>
+            <p class="doc-para">
+                Avatar takes base class as <span class="text-highlight">.avatar</span> and then the image inside should have class as <span class="text-highlight">.avatar-image</span>
+            </p>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="avatar">
+                    <img src="/assets/photos/stock-photo4.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Round Avatar</h2>
+            <p class="doc-para">
+                Round Avatars come in 6 different sizes with values as Extra extra Large <span class="text-highlight">.avatar-size-xxl</span>, Extra Large <span class="text-highlight">.avatar-size-xl</span>, Large <span class="text-highlight">.avatar-size-lg</span>, Medium (by default this is medium), Small <span class="text-highlight">.avatar-size-sm</span>, Extra Small <span class="text-highlight">.avatar-size-xs</span>. 
+            </p>
+
+            <p class="doc-para">
+                To use these avatar we use the base class <span class="text-highlight">.avatar</span> and on that class we use an add on class <span class="text-highlight">.avatar-size-xxl</span>, <span class="text-highlight">.avatar-size-xl</span>, <span class="text-highlight">.avatar-size-sm</span>, etc. 
+            </p>
+            
+            <div class="component">
+                <div class="avatar avatar-size-xxl">
+                    <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-size-xl">
+                    <img src="/assets/photos/stock-photo2.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-size-lg">
+                    <img src="/assets/photos/stock-photo3.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar">
+                    <img src="/assets/photos/stock-photo4.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-size-sm">
+                    <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-size-xs">
+                    <img src="/assets/photos/stock-photo2.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+            </div>
+
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="avatar avatar-size-xxl">
+                    <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+
+                <div class="avatar avatar-size-xl">
+                    <img src="/assets/photos/stock-photo2.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+
+                <div class="avatar avatar-size-lg">
+                    <img src="/assets/photos/stock-photo3.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+
+                <div class="avatar">
+                    <img src="/assets/photos/stock-photo4.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+
+                <div class="avatar avatar-size-sm">
+                    <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+
+                <div class="avatar avatar-size-xs">
+                    <img src="/assets/photos/stock-photo2.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Text Avatar</h2>
+
+            <p class="doc-para">
+                Text avatar doesn't have any variations as such tough you can use different sizes to changes the avatar accordingly. The base class is same, here you rather use <span class="text-highlight">&lt;p&gt;</span> tag inside <span class="text-highlight">.avatar</span>
+            </p>
+            <div class="component">
+                <div class="avatar">
+                    <p>XXL</p>
+                </div>
+                <div class="avatar">
+                    <p>XL</p>
+                </div>
+                <div class="avatar">
+                    <p>LG</p>
+                </div>
+                <div class="avatar">
+                    <p>MD</p>
+                </div>
+            </div>
+
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="avatar">
+                    <p>XXL</p>
+                </div>
+                <div class="avatar">
+                    <p>XL</p>
+                </div>
+                <div class="avatar">
+                    <p>LG</p>
+                </div>
+                <div class="avatar">
+                    <p>MD</p>
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Avatar with Badges</h2>
+            
+            <p class="doc-para">
+                Badges on avatar can be used to show different status of those Avatars. To use badges on avatar use base class <span class="text-highlight">.avatar</span> and then use one span tag. The span tag takes two class one is base class for badge and second one is for status. 
+            </p>
+            <p class="doc-para">
+                Badges comes in 3 different status namely <span class="text-highlight">.badge-idle</span> for Idle state, <span class="text-highlight">.badge-online</span> for online status and <span class="text-highlight">.badge-dnd</span> for Do Not Disturb Status. If no status class is provided it by default takes in primary color.
+            </p>
+            <div class="component">
+                <div class="avatar avatar-shadow">
+                    <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image" />
+                    <span class="avatar-badge badge-idle"></span>
+                </div>
+                <div class="avatar avatar-shadow">
+                    <img src="/assets/photos/stock-photo2.jpg " class="avatar-image" alt="avatar image" />
+                    <span class="avatar-badge badge-online"></span>
+                </div>
+                <div class="avatar avatar-shadow">
+                    <img src="/assets/photos/stock-photo3.jpg" class="avatar-image" alt="avatar image" />
+                    <span class="avatar-badge badge-dnd"></span>
+                </div>
+            </div>
+
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="avatar avatar-shadow">
+                    <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image" />
+                    <span class="avatar-badge badge-idle"></span>
+                </div>
+                <div class="avatar avatar-shadow">
+                    <img src="/assets/photos/stock-photo2.jpg " class="avatar-image" alt="avatar image" />
+                    <span class="avatar-badge badge-online"></span>
+                </div>
+                <div class="avatar avatar-shadow">
+                    <img src="/assets/photos/stock-photo3.jpg" class="avatar-image" alt="avatar image" />
+                    <span class="avatar-badge badge-dnd"></span>
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Square Avatars</h2>
+            
+            <p class="doc-para">
+                Square Avatar comes with different 6 different sizes. Classes used are same as that of Round Avatar.
+                Here to make it square we use an add-on of <span class="text-highlight">.avatar-square</span> class. Rest everything remains same. So in total 3 classes are used i.e., base class <span class="text-highlight">.avatar</span>, class to define square shape <span class="text-highlight">.avatar-square</span> and last any of the size class.
+            </p>
+
+            <div class="component">
+                <div class="avatar avatar-square avatar-size-xl">
+                    <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-square">
+                    <img src="/assets/photos/stock-photo2.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-square avatar-size-sm">
+                    <img src="/assets/photos/stock-photo3.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-square avatar-size-xs">
+                    <img src="/assets/photos/stock-photo4.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+            </div>
+
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="avatar avatar-square avatar-size-xl">
+                    <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-square">
+                    <img src="/assets/photos/stock-photo2.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-square avatar-size-sm">
+                    <img src="/assets/photos/stock-photo3.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+                <div class="avatar avatar-square avatar-size-xs">
+                    <img src="/assets/photos/stock-photo4.jpg" class="avatar-image" alt="avatar image"/>
+                </div>
+            </script>
+        </div>
+
+        <div id="alert">
+            <h1 class="doc-header">Alert</h1>
+            <p class="doc-para">
+                Alerts are used to display messages that may require user attention. Here we can see different type of alerts with different colors.
+            </p>
+            <p class="doc-para">
+                Alerts has a base class as <span class="text-highlight">.alert</span> which takes 3 tags, one for icon one for message body and one is for close button interaction if any. The icon tag use class <span class="text-highlight">.alert-icon</span> and the body takes class as <span class="text-highlight">.alert-body</span> while the close button takes class as <span class="text-highlight">.alert-close</span>. Alert body have 2 tags one for header as <span class="text-highlight">.alert-header</span> and one of text as <span class="text-highlight">.alert-text</span>.
+            </p>
+            
+            <p class="doc-para">
+                Close button is optional and only used if necessary.
+            </p>
+            <div class="component component-vertical">
+                <div class="alert">
+                    <span class="material-icons alert-icon">check_circle</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Success. Action is completed.</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="alert">
+                    <span class="material-icons alert-icon">check_circle</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Success. Action is completed.</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Default Alert</h2>
+            <p class="doc-para">
+                Default alert have four different color variation based on the type of alert namely Error, Warning, Success and fourth one is default primary which can be used to display Information.
+            </p>
+            <p class="doc-para">
+                Alert takes default class of <span class="text-highlight">.alert</span> and then we need to specify extra class for the type of message. For default no need to specify extra class.
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">.alert-color-success</span> for Success messages.<br>
+                <span class="text-highlight">.alert-color-warning</span> for Warning messages.<br>
+                <span class="text-highlight">.alert-color-error</span> for Error messages.<br>
+            </p>
+            <div class="component component-vertical">
+                <div class="alert alert-color-success">
+                    <span class="material-icons alert-icon">check_circle</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Success. Action is completed.</p>
+                    </div>
+                </div>
+
+                <div class="alert alert-color-warning">
+                    <span class="material-icons alert-icon">warning</span>
+                    <div class="alert-body">
+                        <p class="alert-text">
+                            Warning! Action may cause inconsistencies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alert alert-color-error">
+                    <span class="material-icons alert-icon">error</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Error. Action Invalid</p>
+                    </div>
+                </div>
+                <div class="alert">
+                    <span class="material-icons alert-icon">help</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Info. This is a default color</p>
+                    </div>
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="alert alert-color-success">
+                    <span class="material-icons alert-icon">check_circle</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Success. Action is completed.</p>
+                    </div>
+                </div>
+
+                <div class="alert alert-color-warning">
+                    <span class="material-icons alert-icon">warning</span>
+                    <div class="alert-body">
+                        <p class="alert-text">
+                            Warning! Action may cause inconsistencies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="alert alert-color-error">
+                    <span class="material-icons alert-icon">error</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Error. Action Invalid</p>
+                    </div>
+                </div>
+
+                <div class="alert">
+                    <span class="material-icons alert-icon">help</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Info. This is a default color</p>
+                    </div>
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Standard Alert</h2>
+
+            <p class="doc-para">
+                Standard Alert comes with one extra variation to the previous default variation. Here you have alert background as white which have a slightly cleaner look. To use standard alert add class <span class="text-highlight">.alert-bg-default</span>
+            </p>
+            <div class="component component-vertical ">
+                <div class="alert alert-color-success alert-bg-default">
+                    <span class="material-icons alert-icon">check_circle</span>
+                    <div class="alert-body ">
+                        <p class="alert-text">Success. Action is completed.</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+
+                <div class="alert alert-color-warning alert-bg-default">
+                    <span class="material-icons alert-icon">warning</span>
+                    <div class="alert-body">
+                        <p class="alert-text"> Warning! Action may cause inconsistencies.</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+
+                <div class="alert alert-color-error alert-bg-default">
+                    <span class="material-icons alert-icon">error</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Error. Action Invalid</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+
+                <div class="alert alert-bg-default">
+                    <span class="material-icons alert-icon">help</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Info. This is a default color</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="alert alert-color-success alert-bg-default">
+                    <span class="material-icons alert-icon">check_circle</span>
+                    <div class="alert-body ">
+                        <p class="alert-text">Success. Action is completed.</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+
+                <div class="alert alert-color-warning alert-bg-default">
+                    <span class="material-icons alert-icon">warning</span>
+                    <div class="alert-body">
+                        <p class="alert-text"> Warning! Action may cause inconsistencies.</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+
+                <div class="alert alert-color-error alert-bg-default">
+                    <span class="material-icons alert-icon">error</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Error. Action Invalid</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+
+                <div class="alert alert-bg-default">
+                    <span class="material-icons alert-icon">help</span>
+                    <div class="alert-body">
+                        <p class="alert-text">Info. This is a default color</p>
+                    </div>
+                    <button class="material-icons alert-close">close</button>
+                </div>
+            </script>
+        </div>
+
+        <div id="badge">
+            
+            <h1 class="doc-header">Badge</h1>
+            <p class="doc-para">
+                Badge can be used for various purpose to show something new has appeared or to give some extra information on the existing components. Here the badge is contained inside one badge container class <span class="text-highlight">.badge-container</span>. the badge uses class as<span class="text-highlight">.badge</span>. to display basic badge.
+            </p>
+            <div class="component">
+                <div class="badge-container">
+                    <p>Badge element</p>
+                    <span class="badge">7</span>
+                </div>
+            </div>
+
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="badge-container">
+                    <p>Badge element</p>
+                    <span class="badge">7</span>
+                </div>
+            </script>
+            <h2 class="doc-sub-header">Icon and Text Badge</h2>
+            <p class="doc-para">
+                Round badge is basic type of badge used to emphasize on any Icon or text. To provide empty badges just provide empty badges. To provide square badges add class <span class="text-highlight">.badge-square</span> along with the basic <span class="text-highlight">.badge</span> class. 
+            </p>
+
+            <div class="component component-vertical">
+                <div class="badge-container">
+                    <p>This badge text</p>
+                    <span class="badge">7</span>
+                </div>
+                <div class="badge-container">
+                    <p>This badge text</p>
+                    <span class="badge badge-square">66</span>
+                </div>
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge"></span>
+                </div>
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge">7</span>
+                </div>
+                <div class="badge-container">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="badge badge-square">7</span>
+                </div>
+            </div>
+
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="badge-container">
+                    <p>This badge text</p>
+                    <span class="badge">7</span>
+                </div>
+                <div class="badge-container">
+                    <p>This badge text</p>
+                    <span class="badge badge-square">66</span>
+                </div>
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge"></span>
+                </div>
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge">7</span>
+                </div>
+                <div class="badge-container">
+                    <span class="material-icons">shopping_cart</span>
+                    <span class="badge badge-square">7</span>
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Color Badges</h2>
+            <p class="doc-para">
+                Badges also have different variations of colors. It has four different variations one being the primary which we have seen so far. The other 3 colors as Red, Green and Yellow. We specify this colors alongside the base <span class="text-highlight">.badge</span> class.
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">.badge-red</span> for Red color. <br>
+                <span class="text-highlight">.badge-yellow</span> for Yellow color. <br>
+                <span class="text-highlight">.badge-green</span> for Green color. <br>
+            </p>
+
+
+            <div class="component ">
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge">7</span>
+                </div>
+
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge badge-green">56</span>
+                </div>
+
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge badge-yellow">7</span>
+                </div>
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge badge-red">7</span>
+                </div>
+            </div>
+
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge">7</span>
+                </div>
+
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge badge-green">56</span>
+                </div>
+
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge badge-yellow">7</span>
+                </div>
+                <div class="badge-container">
+                    <span class="material-icons">home</span>
+                    <span class="badge badge-red">7</span>
+                </div>
+            </script>
+        </div>
+        
+        <div id="button">
+            <h1 class="doc-header">Button</h1>
+            <p class="doc-para">
+                Buttons can be used for different purposes in navbar on cards, etc. Here in component library we provide with different types of button from default, icons to link button and Floating Action button.
+                The button class takes two parameters one <span class="text-highlight">.btn</span> class and  second one being the type of button. Both classes are compulsory.
+            </p>
+            
+            <div class="component">
+                <button class="btn btn-default">Default Button</button>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <button class="btn btn-default">Default Button</button>
+            </script>
+            <h2 class="doc-sub-header">Basic Button</h2>
+
+            <p class="doc-para">
+                Standard buttons are  mostly used in the component library.It has two variations one being Default and other being a Primary button. To make button disabled add the <span class="text-highlight">disabled</span> attribute to the button tag.
+            </p>
+            
+            <p class="doc-para">
+                <span class="text-highlight">.btn-default</span> for Default button. <br>
+                <span class="text-highlight">.btn-primary</span> for Primary button. <br>
+            </p>
+            <div class="component">
+                <button class="btn btn-default">Default Button</button>
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-default" type="button" disabled>Disabled Button</button>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <button class="btn btn-default">Default Button</button>
+                <button class="btn btn-primary">Primary Button</button>
+                <button class="btn btn-default" type="button" disabled>Disabled Button</button>
+            </script>
+            
+            <h2 class="doc-sub-header">Outline Button</h2>
+            <p class="doc-para">
+                Outline buttons are also similar as basic default patterns only difference is the second class used is of different type. The two different classes used are for default and primary outline button.
+            </p>
+            
+            <p class="doc-para">
+                <span class="text-highlight">.btn-outline</span> for Outline button. <br>
+                <span class="text-highlight">.btn-outline-primary</span> for Outline button. To use this we need to provide it along with <span class="text-highlight">.btn-outline</span> class.
+            </p>
+            <div class="component">
+                <button class="btn btn-outline">Outline Button</button>
+                <button class="btn btn-outline btn-outline-primary">Primary Button</button>
+                <button class="btn btn-outline" type="button" disabled>Disabled Button</button>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <button class="btn btn-outline">Outline Button</button>
+                <button class="btn btn-outline btn-outline-primary">Primary Button</button>
+                <button class="btn btn-outline" type="button" disabled>Disabled Button</button>
+            </script>
+            <h2 class="doc-sub-header">Icon Button</h2>
+            <p class="doc-para">
+                Icon button doesn't have any variation as such but it comes with different size format namely small medium and large Icon button have one and only default colour as primary colour which appears on hover.
+            </p>
+            <p class="doc-para">
+                To use icon button you need to provide <span class="text-highlight">.btn-icon</span> as as class along with btn class the size must be provided to the child item class. By default icon has medium size
+            </p>
+            <p class="doc-para">
+                Provide these class names to child of <span class="text-highlight">.btn-icon</span> class. <br>
+                <span class="text-highlight">.btn-icon-sm</span> for Small Icon Button. <br>
+                <span class="text-highlight">.btn-icon-lg</span> for Large Icon Button. <br>
+            </p>
+            <div class="component">
+                <button class="btn btn-icon">
+                    <span class="material-icons btn-icon-sm">home</span>
+                </button>
+                <button class="btn btn-icon">
+                    <span class="material-icons">home</span>
+                </button>
+                <button class="btn btn-icon">
+                    <span class="material-icons btn-icon-lg">home</span>
+                </button>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <button class="btn btn-icon">
+                    <span class="material-icons btn-icon-sm">home</span>
+                </button>
+                <button class="btn btn-icon">
+                    <span class="material-icons">home</span>
+                </button>
+                <button class="btn btn-icon">
+                    <span class="material-icons btn-icon-lg">home</span>
+                </button>
+            </script>
+            <h2 class="doc-sub-header">Link Button</h2>
+            <p class="doc-para">
+                Button link come with 2 different variation one being primary and other one being the secondary. Button link ki uses anchor tag along with which we have to pass <span class="text-highlight">.btn</span> class and other required class accordingly.
+            </p>
+            <p class="doc-para">
+                The two different button linked variations are <br>
+                <span class="text-highlight">.btn-link-primary</span> for Primary link button. <br>                <span class="text-highlight">.btn-link-secondary</span> for Secondary link button. <br>
+
+            </p>
+            <div class="component">
+                <a class="btn btn-link-primary"> Primary link </a>
+                <a class="btn btn-link-secondary"> Secondary link </a>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <a class="btn btn-link-primary"> Primary link </a>
+                <a class="btn btn-link-secondary"> Secondary link </a>
+            </script>
+            <h2 class="doc-sub-header">Floating Action Button</h2>
+            <p class="doc-para">
+                Floating action button can be used to perform the most primary actions are the most performed actions on the screen. It takes a third parameter as well to define its primary color. Floating button has four different positional parameters which are responsible to position the floating button on the screen.
+            </p>
+            <p class="doc-para">
+                for Horizontal alignment: <br>
+                <span class="text-highlight">.btn-float-left</span> for aligning it from left <br>
+                <span class="text-highlight">.btn-float-right</span> for aligning it from right <br>
+            </p>
+            <p class="doc-para">
+                for Vertical alignment: <br>
+                <span class="text-highlight">.btn-float-top</span> for aligning it from top <br>
+                <span class="text-highlight">.btn-float-bottom</span> for aligning it from bottom <br>
+            </p>
+            
+            <p class="doc-para">
+                Basically you have to use one horizontal alignment class and one vertical alignment class to make display at any four corners of the screen. The widely used is bottom right.
+            </p>
+            <div class="component">
+                <button class="btn btn-float btn-primary">
+                    <span class="material-icons">home</span>
+                </button>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <button class="btn btn-float btn-primary">
+                    <span class="material-icons">home</span>
+                </button>
+                <!-- Below code is not used in the above example but it fixes floating
+                button to the bottom right  -->
+                <button class="btn btn-float btn-primary btn-float-right btn-float-bottom" >
+                    <span class="material-icons">home</span>
+                </button>
+            </script>
+            
+        </div>
+
+        <div id="cards">
+            <h1 class="doc-header">Cards</h1>
+            <p class="doc-para">
+                Cards comes with different variations for specific purpose. Cards have option for ad content description buttons and CTAs (call to Action). Most of these options that we use are optional and can be used along with utility classes to get desired results.
+            </p>
+            <p class="doc-para">
+                Below code is an basic example of card that we will be using.
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">.card</span> class is used to define card <br>
+                <span class="text-highlight">.card-img-wrapper</span> class is used to wrap the image of card <br>
+                <span class="text-highlight">.card-content-wrapper</span> class is kind of the main body of the card and used to wrap all the content including title, description and other Call To Actions.<br>
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">.card-content-wrapper</span> class further takes all the below parameters:
+                <ul class="doc-list">
+                    <li>
+                        <span class="text-highlight">.card-content</span> class is takes all the content including title and description. </li>
+                    <ul class="doc-list">
+                        <li><span class="text-highlight">.card-title</span> class is used to define the title of card </li>
+                        <li><span class="text-highlight">.card-description</span> class is used to give description to the card </li>
+                    </ul>
+                    <li><span class="text-highlight">.card-cta</span> class is used to define the cta items like price and buttons. </li>
+                    <ul class="doc-list">
+                        <li><span class="text-highlight">.card-price</span> class is used for displaying price of the item. </li>
+                        <li><span class="text-highlight">.card-buttons</span> class is wrapper class for all the buttons </li>
+                    </ul>
+                </ul>
+            </p>
+            <div class="component align-center justify-content-center">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="">
+                    </div>
+                    <div class="card-content-wrapper ">
+                        <div class="card-content">
+                            <h2 class="card-title">My card</h2>
+                            <p class="card-description">This is description of my card.</p>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price"> Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price">Rs 999</span>
+                                    <span class="card-discount-percentage ">10% off</span>
+                                </div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-primary card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card</h2>
+                            <p class="card-description">This is description of my card.</p>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price"> Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price">Rs 999</span>
+                                    <span class="card-discount-percentage ">10% off</span>
+                                </div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-primary card-btn flex-grow-1">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </script>
+            <h2 class="doc-sub-header">Vertical Card</h2>
+            <p class="doc-para">
+                Vertical card is the default card that appears when you use <span class="text-highlight">.card</span> class. Cards can have badge to emphasize on discount or trending products. It also has one optional favorite button icon.
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">.card-badge</span> class is used to add badge to card. To us it put it inside card component direct child.<br>
+                <span class="text-highlight">.card-favorite</span> class is used to give favorite button which can act as add to wishlist or liked product. Again this is optional one.<br>
+            </p>
+            <div class="component">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card</h2>
+                            <div class="card-description">This is description of my card</div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price">Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price">Rs 999</span>
+                                    <span class="card-discount-percentage ">10% off</span>
+                                </div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-primary card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-badge">trending</div>
+                    <div class="card-img-wrapper">
+                        <button class="btn btn-icon btn-icon-red card-favorite">
+                            <span class="material-icons">favorite_outline</span>
+                        </button>
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card</h2>
+                            <div class="card-description">This is description of my card</div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price">Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price">Rs 999</span>
+                                    <span class="card-discount-percentage ">10% off</span>
+                                </div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-primary card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="card">
+                    <div class="card-badge">trending</div>
+                    <div class="card-img-wrapper">
+                        <button class="btn btn-icon btn-icon-red card-favorite">
+                            <span class="material-icons">favorite_outline</span>
+                        </button>
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card</h2>
+                            <div class="card-description">This is description of my card</div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price">Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price">Rs 999</span>
+                                    <span class="card-discount-percentage ">10% off</span>
+                                </div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-primary card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </script>
+
+            <h2>Card with Text Overlay and Dismiss</h2>
+            <p class="doc-para">
+                Card also has parameter for displaying text overlay on to to display products Out-of-stock or Unavailable products. Also it has one cancel button
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">.card-text-overlay</span> class is used to add Text overlay to card. To us it put it inside card component as direct child.<br>
+                <span class="text-highlight">.card-dismiss-btn</span> class is used to give dismiss icon button which can be used to cancel or delete card.<br>
+            </p>
+            <div class="component">
+                <div class="card">
+                    <div class="card-text-overlay">
+                        <h2>Out of Stock</h2>
+                    </div>
+                    <div class="card-img-wrapper">
+                        <button class="btn btn-icon btn-icon-red card-favorite">
+                            <span class="material-icons">favorite_outline</span>
+                        </button>
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card </h2>
+                            <div class="card-description">This is description of my card</div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price">Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price">Rs 999</span>
+                                    <span class="card-discount-percentage">10% off</span>
+                                </div>  
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-default card-btn">Buy Now</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <div class="btn card-dismiss-btn">
+                            <span class="material-icons">close</span>
+                        </div>
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card </h2>
+                            <div class="card-description">This is description of my card</div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price">Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price">Rs 999</span>
+                                    <span class="card-discount-percentage">10% off</span>
+                                </div>  
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-default card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="card">
+                    <div class="card-text-overlay">
+                        <h2>Out of Stock</h2>
+                    </div>
+                    <div class="card-img-wrapper">
+                        <button class="btn card-dismiss-btn">
+                            <span class="material-icons">close</span>
+                        </button>
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card </h2>
+                            <div class="card-description">This is description of my card</div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price">Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price">Rs 999</span>
+                                    <span class="card-discount-percentage">10% off</span>
+                                </div>  
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-outline card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </script>
+
+            <h2>Card Horizontal</h2>
+            <p class="doc-para">
+                Horizontal cards are different variation of the card. Here the components are all aligned horizontally. It can be used in product listing or even in smaller screens or to display products at checkout it totally depends on you design. 
+            </p>
+            <p class="doc-para">
+                To use horizontal use class <span class="text-highlight">.card-horizontal</span>  along with class  
+                <span class="text-highlight">.card</span>  rest is the same as above vertical card.
+            </p>
+            <div class="component">
+                <div class="card card-horizontal">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card</h2>
+                            <div class="card-description">his is description of my card</div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price">Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price"> Rs 999</span>
+                                    <span class="card-discount-percentage"> 10% off</span>
+                                </div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-outline card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="card card-horizontal">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card</h2>
+                            <div class="card-description">his is description of my card</div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price">Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price"> Rs 999</span>
+                                    <span class="card-discount-percentage"> 10% off</span>
+                                </div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-outline card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </script>
+
+            <h2>Card List</h2>
+            <p class="doc-para">
+                Card lists are used to display list products in a vertical list as horizontal items. To make this card use <span class="text-highlight">.card-list-item</span> along with <span class="text-highlight">.card</span> and <span class="text-highlight">.card-horizontal</span> 
+            </p>
+            <p class="doc-para">
+                Here to arrange items you don't have to make any structural changes.You just keep adding extra classes to the base <span class="text-highlight">.card</span> class. You cannot also add badges and favorite button or text overlay but then you have to add those components extra inside the card component. 
+            </p>
+            <div class="component">
+                <div class="card card-horizontal card-list-item">
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card</h2>
+                            <div class="card-description">
+                                I'm meant to be writing at this moment. What I mean is, I'm meant to be writing something else at this moment. The document I'm meant to be writing is, of course, open in another program on my computer and is patiently awaiting my attention. Yet here I am plonking down senseless sentiments in this paragraph because it's easier to do than to work on anything particularly meaningful. I am grateful for the distraction.
+                            </div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price"> Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price"> Rs 999 </span>
+                                    <span class="card-discount-percentage"> 10% off</span>
+                                </div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-outline card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="card card-horizontal card-list-item">
+                    <!-- Badges component optional -->
+                    <div class="card-badge">trending</div>
+                    <!-- Text Overlay component optional-->
+                    <div class="card-text-overlay">
+                        <h2>Out of Stock</h2>
+                    </div>
+                    <div class="card-img-wrapper">
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card-image">
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title">My card</h2>
+                            <div class="card-description">
+                                I'm meant to be writing at this moment. Add big para here
+                            </div>
+                        </div>
+                        <div class="card-cta">
+                            <div class="card-price">
+                                <span class="card-discount-price"> Rs 900</span>
+                                <div class="card-price-details">
+                                    <span class="card-original-price"> Rs 999 </span>
+                                    <span class="card-discount-percentage"> 10% off</span>
+                                </div>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-outline card-btn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </script>
+
+            <h2>Text Card</h2>
+            <p class="doc-para">
+                Text card can be used to display a message to the user or to convey information about another product or any short note or give a brief description on any topic.
+            </p>
+            <p class="doc-para">
+                To use use text card. use <span class="text-highlight">.text-card</span> along with the base <span class="text-highlight">.card</span> class. Also you need to provide the <span class="text-highlight">.text-card-description</span> class along with <span class="text-highlight">.card-description</span>
+            </p>
+            <div class="component">
+                <div class="card text-card">
+                    <div class="btn card-dismiss-btn">
+                        <span class="material-icons">close</span>
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title"> My card</h2>
+                            <div class="card-description text-card-description">
+                                Welcome to my world. You will be greeted by the unexpected here and your mind will be
+                                challenged and expanded in ways that you never thought possible. That is if you are
+                                able to survive...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="card text-card">
+                    <div class="btn card-dismiss-btn">
+                        <span class="material-icons">close</span>
+                    </div>
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <h2 class="card-title"> My card</h2>
+                            <!-- provide .text-card-description class here -->
+                            <div class="card-description text-card-description">
+                                Welcome to my world. You will be greeted by the unexpected here and your mind will be
+                                challenged and expanded in ways that you never thought possible. That is if you are
+                                able to survive...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </script>
+        </div>
+
+        <div id="image">
+            <h1 class="doc-header">Image</h1>
+            
+            <p class="doc-para">
+                Images component can be used to define responsive images that can adapt to the parent element. To use this we need to wrap it inside block named <span class="text-highlight">.img-wrap</span> and inside which we will have to declare an images with <span class="text-highlight">.img</span> class.
+
+            </p>
+            <p class="doc-para">
+                Default width of wrapper class is 100%. You can modify it with utilities using it along with wrapper class. 
+            </p>
+            <div class="component no-wrap align-center">
+                <div class="img-wrap w-50">
+                    <img class="img" src="/assets/Photos/product-1.jpg" alt="product-image">
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="img-wrap w-50">
+                    <img class="img" src="/assets/Photos/product-1.jpg" alt="product-image">
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Square Responsive Image</h2>
+            <p class="doc-para">
+                Square image by default with a square shape to use it use class <span class="text-highlight">.img</span> inside wrapper class with <span class="text-highlight">&lt;img&gt;</span> tag. The default width of this class is 100%.
+            </p>
+            <div class="component no-wrap">
+                <div class="img-wrap">
+                    <img src="/assets/Photos/product-1.jpg" alt="product-image" class="img">
+                </div>
+                <div class="img-wrap">
+                    <img src="/assets/Photos/stock-photo.jpg" alt="product-image" class="img">
+                </div>
+            </div>
+            
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="img-wrap">
+                    <img class="img" src="/assets/Photos/product-1.jpg" alt="product-image">
+                </div>
+                <div class="img-wrap">
+                    <img class="img" src="/assets/Photos/stock-photo.jpg" alt="product-image">
+                </div>
+            </script>
+            <h2 class="doc-sub-header">Round Image</h2>
+            <p class="doc-para">
+                To define round images we use <span class="text-highlight">.img-round</span> class along with <span class="text-highlight">&lt;img&gt;</span> tag. To use this we wrap it around wrapper class same as square image.
+            </p>
+            <div class="component no-wrap">
+                <div class="img-wrap">
+                    <img class="img-round" src="/assets/Photos/stock-photo2.jpg" alt="product-image">
+                </div>
+                <div class="img-wrap">
+                    <img class="img-round" src="/assets/Photos/product-1.jpg" alt="product-image">
+                </div>
+            </div>
+            
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="img-wrap">
+                    <img class="img-round" src="/assets/Photos/stock-photo2.jpg" alt="product-image">
+                </div>
+                <div class="img-wrap">
+                    <img class="img-round" src="/assets/Photos/product-1.jpg" alt="product-image">
+                </div>
+            </script>
+        </div>
+
+        <div id="input">
+            <h1 class="doc-header">Input</h1>
+            <p class="doc-para">
+                Input fields can be used to take data from user or for taking inputs for authentication. The original input tag is wrapped inside wrapper class <span class="text-highlight">input-wrapper</span> and we attach class <span class="text-highlight">input-field</span> to <span class="text-highlight">&lt;input&gt;</span> tag inside wrapper. This gives us our basic input field.
+            </p>
+            <div class="component component-vertical">
+                <div class="input-wrapper">
+                    <input type="text" class="input-field" placeholder="Enter your Name">
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="input-wrapper">
+                    <input type="text" class="input-field" placeholder="Enter your Name">
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Input with messages and variations</h2>
+            <p class="doc-para">
+                Input field particularly comes with different color variations majorly displaying success, warning or error signs. Input wrapper also have one optional parameter to give an label to input to externally display what that input is responsible for inside the wrapper named as <span class="text-highlight">input-label</span> which we provide inside <span class="text-highlight">input-wrapper</span> class. It also have one class <span class="text-highlight">input-message</span> to display any other messages related to input field which again we have to give inside wrapper class.
+            </p>
+            <p class="doc-para">
+                To display different color styles we have following classes: <br>
+                <span class="text-highlight">input-color-success</span> to display success messages. <br>
+                <span class="text-highlight">input-color-warning</span> to display warning messages. <br>
+                <span class="text-highlight">input-color-error</span> to display success messages. <br>
+            </p>
+            <div class="component component-vertical">
+                <div class="input-wrapper">
+                    <label for="email" class="input-label">Enter mail:</label>
+                    <input id="email" type="text" class="input-field">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" class="input-field input-color-success" >
+                    <span class="input-message">Success</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" class="input-field input-color-warning" >
+                    <span class="input-message">Warning Message</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" class="input-field input-color-error" >
+                    <span class="input-message">Please enter valid email</span>
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="input-wrapper">
+                    <label for="email" class="input-label">Enter mail:</label>
+                    <input id="email" type="text" class="input-field">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" class="input-field input-color-success" >
+                    <span class="input-message">Success</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" class="input-field input-color-warning" >
+                    <span class="input-message">Warning Message</span>
+                </div>
+                <div class="input-wrapper">
+                    <input type="email" class="input-field input-color-error" >
+                    <span class="input-message">Please enter valid email</span>
+                </div>
+            </script>
+            <h2 class="doc-sub-header">Rounded Input</h2>
+            <p class="doc-para">
+                Rounded input provided us with round styled input fields. To use this we have to add an extra class <span class="text-highlight">input-rounded</span> along with <span class="text-highlight">input-field</span> class. You can also use to along with different colors as that of normal input tag and also add <span class="text-highlight">input-message</span> class along with it. So everything is same just style changes.
+            </p>
+            <div class="component">
+                <div class="input-wrapper">
+                    <input type="text" class="input-field  input-rounded" placeholder="Enter your email">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" class="input-field  input-rounded input-color-error" placeholder="Enter your email">
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="input-wrapper">
+                    <input type="text" class="input-field  input-rounded" placeholder="Enter your email">
+                </div>
+                <div class="input-wrapper">
+                    <input type="text" class="input-field  input-rounded input-color-error" placeholder="Enter your email">
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Input with Full width</h2>
+            <p class="doc-para">
+                Input with full width can be used in places where you wish to make the input take teh size of the container to maintain consistent width across other inputs. You provide <span class="text-highlight">input-width-100</span> along with wrapper class <span class="text-highlight">input-wrapper</span>
+            </p>
+            <div class="component component-vertical">
+                <div class="input-wrapper input-width-100">
+                    <input type="text" class="input-field " placeholder="Enter your email">
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="input-wrapper input-width-100">
+                    <input type="text" class="input-field " placeholder="Enter your email">
+                </div>
+            </script>
+
+            <h2 class="doc-sub-header">Multiline inputs</h2>
+            <p class="doc-para">
+                Multiline Inputs makes use of <span class="text-highlight">&lt;textarea&&gt;</span> tag to make multiline comments possible. To use it use <span class="text-highlight">input-field-area</span> along with <span class="text-highlight">input-field</span> class inside wrapper class.
+            </p>
+            <div class="component">
+                <div class="input-wrapper">
+                    <textarea type="text" class="input-field input-field-area" placeholder="Enter your email"></textarea>
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="input-wrapper">
+                    <textarea type="text" class="input-field input-field-area" placeholder="Enter your email"></textarea>
+                </div>
+            </script>
+        </div>
+
+        <div id="text-utilities">
+            
+            <h1 class="doc-header">Text Utilities</h1>
+            <p class="doc-para">
+                Text Utilities component includes manipulation around Headings, font colors, font size, font weight, alignment and different utilities for text. The default font Grand-UI uses is Open Sans. and the font-size for 1rem equals 10px.
+            </p>
+            <h2 class="doc-sub-header">Heading</h2>
+            <p class="doc-para">
+                Heading can be applied using default h1, h2, h3, h4, h5, h6 tags. We can also use <span class="text-highlight">h1, h2, h3, h4, h5, h6</span> classes to define different heading sizes to other tags as well.
+            </p>
+            <div class="component component-vertical">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+
+                <div class="h1">This is not h1 tag</div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <h1>Heading 1</h1>
+                <h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>
+
+                <div class="h1">This is not h1 tag</div>
+            </script>
+
+            <h2 class="doc-sub-header">Text Alignment</h2>
+            <p class="doc-para">
+                Alignment utilities can be used to align text at different positions in the block. We use three different alignments:
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">text-align-left</span> used to align text to left. <br>
+                <span class="text-highlight">text-align-center</span> used to align text in center. <br>
+                <span class="text-highlight">text-align-right</span> used to align text to right. <br>
+            </p>
+            <div class="component component-vertical flex-stretch">
+                <p class="text-align-left font-large w-100">Left Text</p>
+                <p class="text-align-center font-large w-100">Center Text</p>
+                <p class="text-align-right font-large w-100">Right Text</p>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <p class="text-align-left font-large">Left Text</p>
+                <p class="text-align-center font-large">Center Text</p>
+                <p class="text-align-right font-large">Right Text</p>
+            </script>
+
+            <h2 class="doc-sub-header">Font color</h2>
+            <p class="doc-para">
+                Font colors are used to give text different font colors to text. It comes with 5 different colors which are as follows:
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">font-primary </span> used for primary color  <br>
+                <span class="text-highlight">font-success </span> used for green or success color  <br>
+                <span class="text-highlight">font-warning </span> used for yellow or warning color  <br>
+                <span class="text-highlight">font-error </span> used for error or red color  <br>
+                <span class="text-highlight">font-gray </span> used for gray color  <br>
+            </p>
+            <div class="component component-vertical">
+                <p class="font-primary  font-large">This is primary font color</p>
+                <p class="font-success  font-large">This is success font color</p>
+                <p class="font-warning  font-large">This is warning font color</p>
+                <p class="font-error  font-large">This is error font color</p>
+                <p class="font-gray  font-large">This is gray font color</p>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <p class="font-primary  font-large">This is primary font color</p>
+                <p class="font-success  font-large">This is success font color</p>
+                <p class="font-warning  font-large">This is warning font color</p>
+                <p class="font-error  font-large">This is error font color</p>
+                <p class="font-gray  font-large">This is gray font color</p>
+            </script>
+            <h2 class="doc-sub-header">Font Weight</h2>
+            <p class="doc-para">
+                Font weights are useful for providing emphasize on different type of fonts.We have use two different classes for same type of font weight so that user may use them according to their convenience. Below are some of the font weight classes that you apply on text element:
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">fw-300</span> and <span class="text-highlight">font-light</span> used for light weight font<br>
+                <span class="text-highlight">fw-400</span> and <span class="text-highlight">font-regular</span> used for regular weight font<br>
+                <span class="text-highlight">fw-500</span> and <span class="text-highlight">font-medium</span> used for medium weight font<br>
+                <span class="text-highlight">fw-600</span> and <span class="text-highlight">font-semi-bold</span> used for semi-bold weight font<br>
+                <span class="text-highlight">fw-700</span> and <span class="text-highlight">font-bold</span> used for bold weight font<br>
+                <span class="text-highlight">fw-800</span> and <span class="text-highlight">font-extra-bold</span> used for Extra bold weight font<br>
+            </p>
+            <div class="component component-vertical">
+                <p class="font-large fw-300">Light Font</p>
+                <p class="font-large fw-400">Regular Font</p>
+                <p class="font-large fw-500">Medium Font</p>
+                <p class="font-large fw-600">Semi-Bold Font</p>
+                <p class="font-large fw-700">Bold Font</p>
+                <p class="font-large fw-800">Extra-bold Font</p>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <p class="font-large fw-300">Light Font</p>
+                <p class="font-large fw-400">Regular Font</p>
+                <p class="font-large fw-500">Medium Font</p>
+                <p class="font-large fw-600">Semi-Bold Font</p>
+                <p class="font-large fw-700">Bold Font</p>
+                <p class="font-large fw-800">Extra-bold Font</p>
+            </script>
+            <h2 class="doc-sub-header">Font Size</h2>
+            <p class="doc-para">
+                Font sizes come in four different variations mainly small, medium, large and Extra large.
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">font-small </span> used for small sized font. <br>
+                <span class="text-highlight">font-medium </span> used for medium sized font. <br>
+                <span class="text-highlight">font-large </span> used for large sized font. <br>
+                <span class="text-highlight">font-x-large </span> used for Extra Large sized font. <br>
+
+            </p>
+            <div class="component component-vertical">
+                <p class="font-small">Small font</p>
+                <p class="font-medium">Medium font</p>
+                <p class="font-large">Large font</p>
+                <p class="font-x-large">Extra Large font</p>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <p class="font-small">Small font</p>
+                <p class="font-medium">Medium font</p>
+                <p class="font-large">Large font</p>
+                <p class="font-x-large">Extra Large font</p>
+            </script>
+        </div>
+
+        <div id="lists">
+            
+            <h1 class="doc-header">Lists</h1>
+            <p class="doc-para">
+                Lists serve various purpose can used to display point wise info on any topic or can be used to display list of items or products. By default we provide basic list with no styling.
+            </p>
+            <p class="doc-para">
+                To use lists use class <span class="text-highlight">list</span> in <span class="text-highlight">&lt;ul&gt;</span> tag. All the items of list have <span class="text-highlight">list-item</span> class.
+            </p>
+            <div class="component component-vertical">
+                <ul class="list">
+                    <li class="list-item">Apple</li>
+                    <li class="list-item">Banana</li>
+                    <li class="list-item">Watermelon</li>
+                    <li class="list-item">Grapes</li>
+                </ul>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <ul class="list">
+                    <li class="list-item">Apple</li>
+                    <li class="list-item">Banana</li>
+                    <li class="list-item">Watermelon</li>
+                    <li class="list-item">Grapes</li>
+                </ul>
+            </script>
+
+            <h2 class="doc-sub-header">Vertical Spaced List</h2>
+            <p class="doc-para">
+                Vertical List is same as the the normal list as the above. We can even add a title for this list using <span class="text-highlight">list-title</span> class. Use it inside list class along with header or normal component. Padding and margins could be taken care of using utilities.
+            </p>
+            <div class="component component-vertical">
+                <ul class="list">
+                    <h3 class="list-title">Components</h3>
+                    <li class="list-item">Avatar </li>
+                    <li class="list-item">Button </li>
+                    <li class="list-item">Navigation </li>
+                    <li class="list-item">Alert </li>
+                </ul>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <ul class="list">
+                    <h3 class="list-title">Components</h3>
+                    <li class="list-item">Avatar </li>
+                    <li class="list-item">Button </li>
+                    <li class="list-item">Navigation </li>
+                    <li class="list-item">Alert </li>
+                </ul>
+            </script>
+
+            <h2 class="doc-sub-header">Horizontal Spaced List</h2>
+            <p class="doc-para">
+                Horizontal Spaced list can be used to arrange list items horizontally. Horizontal items can used to display filter, tags or even in building navigation bar. To make list horizontal use <span class="text-highlight">list-inline</span> class along with <span class="text-highlight">list</span> class. List items must be provided with class name as <span class="text-highlight">list-inline-item</span>
+            </p>
+            <div class="component component-vertical">
+                <ul class="list list-inline">
+                    <li class="list-inline-item">Home</li>
+                    <li class="list-inline-item">Product</li>
+                    <li class="list-inline-item">About</li>
+                </ul>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <ul class="list list-inline">
+                    <li class="list-inline-item">Home</li>
+                    <li class="list-inline-item">Product</li>
+                    <li class="list-inline-item">About</li>
+                </ul>
+            </script>
+
+            <h2 class="doc-sub-header">Stacked List</h2>
+            <p class="doc-para">
+                Stacked List are special kind of list which represent items that are stacked one over the other. Stacked List can be used to display log messages or even small feeds or notifications.
+            </p>
+            <p class="doc-para">
+                To use stacked list use class <span class="text-highlight">list-stacked</span> along with <span class="text-highlight">list</span> class and use <span class="text-highlight">stacked-item</span> class for the items inside list.
+            </p>
+            <div class="component component-vertical">
+                <ul class="list list-stacked">
+                    <li class="stacked-item">This is deleted message</li>
+                    <li class="stacked-item">added comments</li>
+                    <li class="stacked-item">Replied to message</li>
+                    <li class="stacked-item">You got a new message</li>
+                </ul>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <ul class="list list-stacked">
+                    <li class="stacked-item">This is deleted message</li>
+                    <li class="stacked-item">added Comments</li>
+                    <li class="stacked-item">Replied to message</li>
+                    <li class="stacked-item">You got a new message</li>
+                </ul>
+            </script>
+            <h2 class="doc-sub-header">Notification List</h2>
+            <p class="doc-para">
+                Notification List are used to display notification messages in various formats. They are a good example of special kind of Stacked List. We can used more of such customable stacked lists like notification lists.
+            </p>
+            <p class="doc-para">
+                To make use of notification list class we provide <span class="text-highlight">list-notification</span> along with <span class="text-highlight">list</span> class. The item of list takes base class <span class="text-highlight">list-item</span> and another class <span class="text-highlight">notification-item</span>
+            </p>
+            <p class="doc-para">
+                    
+                Inside <span class="text-highlight">notification-item</span> class we can use following components: <br>
+            </p>
+            <p class="doc-para">
+                <ul class="doc-list">
+                
+                <span class="text-highlight">avatar</span> to display avatar of the profile. This is the same normal avatar component that we have reused here. <br>
+                <span class="text-highlight">notification-item-body</span> class is main class that is used to display the main message inside the notification. <br>
+                </ul>
+            </p>
+
+            <div class="component component-vertical">
+                <ul class="list list-notification w-75">
+                    <li class="list-item notification-item">
+                        <div class="avatar">
+                            <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image"/>
+                        </div>
+                        <div class="notification-item-body">
+                            <h4>Post liked</h4>
+                            <p>Saurabh has liked your message.</p>
+                        </div>
+                        <small class="font-gray">few seconds ago</small>
+                    </li>
+                    <li class="list-item notification-item">
+                        <div class="avatar">
+                            <img src="/assets/photos/stock-photo3.jpg" class="avatar-image" alt="avatar image"/>
+                        </div>
+                        <div class="notification-item-body">
+                            <h4>Commented</h4>
+                            <p>Hela has commented your message.</p>
+                        </div>
+                        <small class="font-gray">3 mins ago</small>
+                    </li>
+                    <li class="list-item notification-item">
+                        <div class="avatar">
+                            <img src="/assets/photos/stock-photo2.jpg" class="avatar-image" alt="avatar image"/>
+                        </div>
+                        <div class="notification-item-body">
+                            <h4>Post liked</h4>
+                            <p>Dani has liked your message.</p>
+                        </div>
+                        <small class="font-gray">2 hours ago</small>
+                    </li>
+                    <li class="list-item notification-item">
+                        <div class="avatar">
+                            <img src="/assets/photos/stock-photo4.jpg" class="avatar-image" alt="avatar image"/>
+                        </div>
+                        <div class="notification-item-body">
+                            <h4>Post liked</h4>
+                            <p>Laura has liked your message.</p>
+                        </div>
+                        <small class="font-gray">1 day ago</small>
+                    </li>
+                </ul>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <ul class="list list-notification">
+                    <li class="list-item notification-item">
+                        <div class="avatar">
+                            <img src="/assets/photos/stock-photo.jpg" class="avatar-image" alt="avatar image"/>
+                        </div>
+                        <div class="notification-item-body">
+                            <h4>Post liked</h4>
+                            <p>Saurabh has liked your message.</p>
+                        </div>
+                        <small class="font-gray">few seconds ago</small>
+                    </li>
+                    <li class="list-item notification-item">
+                        <div class="avatar">
+                            <img src="/assets/photos/stock-photo3.jpg" class="avatar-image" alt="avatar image"/>
+                        </div>
+                        <div class="notification-item-body">
+                            <h4>Commented</h4>
+                            <p>Hela has commented your message.</p>
+                        </div>
+                        <small class="font-gray">3 mins ago</small>
+                    </li>
+                    <li class="list-item notification-item">
+                        <div class="avatar">
+                            <img src="/assets/photos/stock-photo2.jpg" class="avatar-image" alt="avatar image"/>
+                        </div>
+                        <div class="notification-item-body">
+                            <h4>Post liked</h4>
+                            <p>Dani has liked your message.</p>
+                        </div>
+                        <small class="font-gray">2 hours ago</small>
+                    </li>
+                    <li class="list-item notification-item">
+                        <div class="avatar">
+                            <img src="/assets/photos/stock-photo4.jpg" class="avatar-image" alt="avatar image"/>
+                        </div>
+                        <div class="notification-item-body">
+                            <h4>Post liked</h4>
+                            <p>Laura has liked your message.</p>
+                        </div>
+                        <small class="font-gray">1 day ago</small>
+                    </li>
+                </ul>
+            </script>
+        </div>
+
+        <div id="navbar">
+            <h1 class="doc-header">Navigation Bar</h1>
+            <p class="doc-para">
+                Navigation bar is widely used component. To make use of it we use <span class="text-highlight">navbar</span> class on <span class="text-highlight">&lt;nav&gt;</span> tag. The <span class="text-highlight">navbar</span> in turn have two elements <span class="text-highlight">nav-logo</span> and <span class="text-highlight">list</span> class which we have already seen previously. we make use of inline list here to get all the list items. We have already seen how list inline works so we won't go in detail here.
+            </p>
+            <p class="doc-para">
+                Navbar have in turn one independent element <span class="text-highlight">nav-search-container</span> which can be placed anywhere. This container takes <span class="text-highlight">nav-search-icon</span> for icon and <span class="text-highlight">nav-search</span> for input field. To make navbar possible we also have use various utility classes.
+            </p>
+            <div class="component">
+                <nav class="navbar">
+                    <div class="nav-logo">
+                        <img src="/assets/Photos/audi-logo.png" alt="">
+                    </div>
+                    <ul class="list list-inline">
+                        <li class="  flex flex-shrink-1 align-items-center">
+                            <div class="nav-search-container">
+                                <span class="material-icons font-x-large nav-search-icon">search</span>
+                                <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                            </div>
+                        </li>
+                        <li class="flex align-items-center">
+                            <button class="btn btn-link-secondary justify-content-start font-medium"> Account</button>
+                        </li>
+                        <li class="flex align-items-center">
+                            <button class="btn btn-link-secondary justify-content-start  nav-item">
+                                <div class="badge-container flex flex-column">
+                                    <span class="material-icons font-x-large">favorite_border</span>
+                                    <span class="font-small">Wishlist</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="flex align-items-center">
+                            <button class="btn btn-link-secondary justify-content-start">
+                                <div class="badge-container flex flex-column">
+                                    <span class="material-icons font-x-large">shopping_cart</span>
+                                    <span class="font-small">Cart</span>
+                                    <span class="badge">7</span>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <nav class="navbar">
+                    <!-- Nav logo goes here -->
+                    <div class="nav-logo">
+                        <img src="/assets/Photos/audi-logo.png" alt="">
+                    </div>
+                    <!-- normal inline list -->
+                    <ul class="list list-inline">
+                        <li class="  flex flex-shrink-1 align-items-center">
+                            <!-- nav-search bar goes here -->
+                            <div class="nav-search-container">
+                                <span class="material-icons font-x-large nav-search-icon">search</span>
+                                <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                            </div>
+                        </li>
+                        <li class="flex align-items-center">
+                            <button class="btn btn-link-secondary justify-content-start font-medium"> Account</button>
+                        </li>
+                        <li class="flex align-items-center">
+                            <button class="btn btn-link-secondary justify-content-start  nav-item">
+                                <div class="badge-container flex flex-column">
+                                    <span class="material-icons font-x-large">favorite_border</span>
+                                    <span class="font-small">Wishlist</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="flex align-items-center">
+                            <button class="btn btn-link-secondary justify-content-start">
+                                <div class="badge-container flex flex-column">
+                                    <span class="material-icons font-x-large">shopping_cart</span>
+                                    <span class="font-small">Cart</span>
+                                    <span class="badge">7</span>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </script>
+        </div>
+    </main>
+    <script src="/getting-started/prism/prism.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
