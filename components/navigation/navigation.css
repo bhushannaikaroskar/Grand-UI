@@ -10,9 +10,11 @@
 
 .nav-logo{
     display: flex;
-    max-width: 6rem;
-    min-width: 5rem;
-    aspect-ratio: 1;
+    height: 5rem;
+}
+
+.nav-logo img{
+    object-fit: contain;
 }
 
 .nav-search-container{

@@ -14,11 +14,6 @@
     border-right: 5px solid var(--PRIMARY-100);
 }
 
-.alert-bg-default{
-    background-color: var(--WHITE);
-    border-right: none;
-}
-
 .alert-icon{
     display: flex;
     font-size: 2.4rem;
@@ -31,7 +26,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-
+    font-weight: 500;
 }
 
 .alert-header{
@@ -66,14 +61,19 @@
     border-right: 5px solid var(--COLOR-ERROR);
 }
 
-
+.alert-bg-default{
+    background-color: var(--WHITE);
+    border-right: none;
+}
 
 .alert-close{
     color: var(--DARK-GREY);
     border: none;
     border-radius: 999px;
-    padding:2px;
+    padding:4px;
     background-color: transparent;
+    cursor: pointer;
+    font-size: 1.8rem;
 }
 
 .alert-close:hover{

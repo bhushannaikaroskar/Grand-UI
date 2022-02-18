@@ -89,6 +89,10 @@ h6 {
     color: var(--GREY);
 }
 
+.font-dark-gray {
+    color: var(--DARK-GREY);
+}
+
 /* FONT SIZE */
 
 .font-small {
