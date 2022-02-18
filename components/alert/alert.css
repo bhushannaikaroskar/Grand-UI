@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
-
+    font-weight: 500;
 }
 
 .alert-header{
@@ -70,8 +70,10 @@
     color: var(--DARK-GREY);
     border: none;
     border-radius: 999px;
-    padding:2px;
+    padding:4px;
     background-color: transparent;
+    cursor: pointer;
+    font-size: 1.8rem;
 }
 
 .alert-close:hover{

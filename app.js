@@ -7,7 +7,6 @@ const docMain = document.querySelector(".doc-main");
 
 const activeTab = (list,listItem) =>{
     const arrayOfTabs = list.querySelectorAll(".list-item");
-    console.log("entering")
     arrayOfTabs.forEach(element => {
         element.querySelector("a").classList.remove("btn-active")
     });

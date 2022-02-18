@@ -34,98 +34,92 @@
     height: 100%;
 }
 
-
 /* PADDING */
 
-
-.p-0{
-    padding: 0rem;
+.p-0 {
+    padding: 0;
 }
 
-.p-0_5{
+.p-0_5 {
     padding: 0.5rem;
 }
 
-.p-1{
+.p-1 {
     padding: 1rem;
 }
 
-.p-1_5{
+.p-1_5 {
     padding: 1.5rem;
 }
 
-.p-2{
+.p-2 {
     padding: 2rem;
 }
 
-.p-2_5{
+.p-2_5 {
     padding: 2.5rem;
 }
 
-
-
 /* PADDING ON X AXIS */
 
-.p-x-0{
-    padding-left: 0rem;
-    padding-right: 0rem;
+.p-x-0 {
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.p-x-0_5{
+.p-x-0_5 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 
-.p-x-1{
+.p-x-1 {
     padding-left: 1rem;
     padding-right: 1rem;
 }
 
-.p-x-1_5{
+.p-x-1_5 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
 
-.p-x-2{
+.p-x-2 {
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
-.p-x-2_5{
+.p-x-2_5 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
 
-
-
 /* PADDING ON Y AXIS */
 
-.p-y-0{
+.p-y-0 {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-.p-y-0_5{
+.p-y-0_5 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
-.p-y-1{
+.p-y-1 {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
-.p-y-1_5{
+.p-y-1_5 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
 
-.p-y-2{
+.p-y-2 {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
 
-.p-y-2_5{
+.p-y-2_5 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
 }
