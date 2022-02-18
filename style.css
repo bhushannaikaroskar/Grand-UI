@@ -220,6 +220,27 @@ html {
     }
 }
 
+
+.doc-scroller{
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+    scrollbar-color: var(--PRIMARY-400) transparent;
+    scrollbar-width: thin;
+}
+
+.doc-scroller-hide{
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+.language-markup{
+    -ms-overflow-style: none;
+    overflow-y: scroll;
+    scrollbar-color: var(--COLOR-SHADOW-PRIMARY-400) transparent;
+    scrollbar-width: thin;
+}
+
 ::-webkit-scrollbar {
     width: 0.6rem;
     height: 0.6rem;
