@@ -6,8 +6,7 @@
     justify-content: flex-start;
     align-items: stretch;
     max-width: 25rem;
-    min-height: 40rem;
-    max-height: 40rem;
+    height: 40rem;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 1px var(--COLOR-SHADOW-2);
     background-color: var(--WHITE);
@@ -130,7 +129,7 @@
 }
 
 .card-list-item .card-content .card-description{
-    -webkit-line-clamp: 5;
+    height: 9rem;
 }
 
 .card-list-item .card-cta {
@@ -186,12 +185,10 @@
 }
 
 .card-description {
-    display: -webkit-box;
     font-size: 1.3rem;
     color: var(--DARK-GREY);
     overflow: hidden;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    height: 3.6rem;
 }
 
 .card-cta {
