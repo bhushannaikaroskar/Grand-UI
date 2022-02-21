@@ -1,6 +1,6 @@
 
 
-const componentList = document.querySelector("#sidebar-list");
+const componentList = document.querySelector(".doc-sidebar");
 const arrayOfListItems = componentList.querySelectorAll(".list-item");
 const docMain = document.querySelector(".doc-main");
 
@@ -20,4 +20,18 @@ arrayOfListItems.forEach((element)=>{
     element.addEventListener("click",(e)=>activeTab(componentList,element))
 })
 
-activeTab(componentList,arrayOfListItems[0]);
+const arr = window.location.href.split("#");
+const value = arr[1];
+
+if(value === "avatar"){
+    activeTab(componentList,arrayOfListItems[1]);
+    console.log(window.location.pathname)
+}else if(value === "installation"){
+    activeTab(componentList,arrayOfListItems[0]);
+    console.log(window.location.pathname)
+
+}else{
+    activeTab(componentList,arrayOfListItems[1]);
+    console.log(window.location.pathname)
+
+}
