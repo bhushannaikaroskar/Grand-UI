@@ -1,0 +1,43 @@
+
+
+.toast{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:max-content;
+
+    border-radius: 5px;
+    gap: 2rem;
+    padding: 1.6rem;
+    font-weight: 500;
+
+    background-color: var(--OFF-BLACK);
+    color: var(--OFF-WHITE);
+}
+
+.toast-text{
+    font-size: 1.4rem;
+}
+
+.toast-error{
+    background-color: var(--COLOR-ERROR-DARK);
+    color: var(--COLOR-TEXT);
+}
+
+.toast-warning{
+    background-color: var(--COLOR-WARNING-DARK);
+    color: var(--COLOR-TEXT);
+}
+
+.toast-success{
+    background-color: var(--COLOR-SUCCESS-DARK);
+    color: var(--COLOR-TEXT);
+}
+
+.toast-primary{
+    background-color: var(--PRIMARY-300);
+    color: var(--COLOR-TEXT);
+}
+
+

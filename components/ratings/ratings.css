@@ -15,9 +15,6 @@
     color: gold;
 }
 
-.ratings-primary {
-}
-
 .ratings-primary .rating-icon{
     color: var(--PRIMARY-100);
 }

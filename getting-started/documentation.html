@@ -75,6 +75,9 @@
             <li class="list-item">
                 <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#ratings">  Ratings </a>
             </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#toast">  Toast </a>
+            </li>
         </ul>
     </aside>
     <main class="doc-main doc-scroller ">
@@ -1830,6 +1833,61 @@
                     </label>
                 </div>
             </script>
+        </div>
+        
+        <div id="toast">
+            <h1 class="doc-header">Toast</h1>
+            <p class="doc-para">
+                Toasts are small messages that can be used to display so actions of user without interrupting the flow of event. Toast messages generally disappears after seconds.
+            </p>
+            <h2 class="doc-sub-header">Default Toast</h2>
+            <p class="doc-para">
+                To use default toast use use <span class="text-highlight">toast</span> class. Inside <span class="text-highlight">toast</span> class we give one <span class="text-highlight">&lt;p&gt;</span> tag which again takes class as <span class="text-highlight">toast-text</span> which is used to pass the message of toast
+            </p>
+            <p class="doc-para">
+                Toast comes with different color variations for different kind of messages. To make use of those provide these below class along with base class <span class="text-highlight">toast</span>. This will change color of toasts.
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">toast-error</span> for displaying error toast. <br>
+                <span class="text-highlight">toast-warning</span> for displaying warning toast. <br>
+                <span class="text-highlight">toast-success</span> for displaying success toast. <br>
+                <span class="text-highlight">toast-primary</span> for displaying primary toast. <br>
+            </p>
+            <div class="component component-vertical">
+                <div class="toast">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+                <div class="toast toast-success">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+                <div class="toast toast-warning">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+                <div class="toast toast-error">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+                <div class="toast toast-primary">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="toast">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+                <div class="toast toast-success">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+                <div class="toast toast-warning">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+                <div class="toast toast-error">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+                <div class="toast toast-primary">
+                    <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+            </script>
+            
         </div>
     </main>
     <script src="/getting-started/prism/prism.js"></script>

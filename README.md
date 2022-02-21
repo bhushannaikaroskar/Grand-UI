@@ -192,6 +192,15 @@ Check out about Ratings: [https://grand-ui.netlify.app/getting-started/documenta
 
 <hr>
 
+### Toast
+
+Toasts are small messages that can be used to display so actions of user without interrupting the flow of event. Toast messages generally disappears after seconds. Grand UI majorly provides with different colors of toast such as red, yellow, green, primary and default is black.
+
+
+Check out about Toasts: [https://grand-ui.netlify.app/getting-started/documentation.html#toast](https://grand-ui.netlify.app/getting-started/documentation.html#toast)
+
+<hr>
+
 Implementation of [grand UI](https://grand-ui.netlify.app)
 
 You can follow me on :
