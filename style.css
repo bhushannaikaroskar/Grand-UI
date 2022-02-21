@@ -19,6 +19,12 @@ html[data-theme="dark"] .doc-body{
     background-color: var(--OFF-WHITE);
 }
 
+html[data-theme="dark"] .landing{
+    --COLOR-PRIMARY-50-SHADE-1: #d7f8e318;
+    background-color: var(--OFF-WHITE);
+}
+
+
 
 :root{
     
