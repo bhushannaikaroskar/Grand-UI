@@ -36,6 +36,12 @@
 
 .alert-text{
     font-size: 1.4rem;
+    color: var(--COLOR-TEXT-BLACK);
+    overflow-wrap: break-word ;
+}
+
+.alert-bg-default .alert-text{
+    font-size: 1.4rem;
     color: var(--OFF-BLACK);
     overflow-wrap: break-word ;
 }

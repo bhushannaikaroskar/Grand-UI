@@ -144,12 +144,12 @@
 }
 
 .btn-focus-primary:hover{
-    color:var(--OFF-BLACK);
+    color:var(--COLOR-TEXT-BLACK);
     background-color: var(--PRIMARY-200);
 }
 
 .btn-active{
-    color:var(--OFF-BLACK);
+    color:var(--COLOR-TEXT-BLACK);
     background-color: var(--PRIMARY-200);
 }
 
