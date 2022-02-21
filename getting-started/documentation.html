@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/getting-started/prism/prism.css" />
     <title>Component Library Documentation</title>
@@ -33,10 +32,9 @@
         <ul class="list">
             <div class="list-tile font-primary font-x-large fw-600">Getting Started</div>
             <li class="list-item">
-                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5">Installation</a>
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5" href="#installation">Installation</a>
             </li>
         </ul>
-        <p> </p>
         <ul id="sidebar-list" class="list">
             <div class="list-tile font-primary font-x-large fw-600">Components</div>
             <li class="list-item">
@@ -75,6 +73,26 @@
         </ul>
     </aside>
     <main class="doc-main doc-scroller ">
+
+        <div id="installation">
+            <h1 class="doc-header">Installation</h1>
+            <p class="doc-para">
+                Installation of Grand UI is quite simple. Put the below code snippet in your <span class="text-highlight">&lt;head&gt;</span> tag. This will load the CSS cdn in your project. You will also require material-icons CDN as this component library make use of icons.
+            </p>
+            <script type="text/plain" class="line-numbers language-markup">
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+                <link href="https://grand-ui.netlify.app/components/components.css" rel="stylesheet"/>    
+            </script>
+            
+            <p class="doc-para">
+                You can also use your own css along with our component library. To import this library directly into your main CSS put this below code at top inside your CSS file.
+            </p>
+            <script type="text/plain" class="line-numbers language-markup">
+                @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+                @import url(./components/components.css);
+            </script>
+        </div>
+
         <div id="avatar">
             <h1 class="doc-header">Avatar</h1>
             <p class="doc-para">
