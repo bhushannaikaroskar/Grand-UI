@@ -5,7 +5,10 @@
 html {
     scroll-behavior: smooth;
 }
+*{
+    color: var(--OFF-BLACK);
 
+}
 
 /* DARK MODE */
 
