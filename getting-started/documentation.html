@@ -24,7 +24,7 @@
                 <a class="btn btn-link-secondary justify-content-start font-large" target="_blank" href="https://github.com/bhushannaikaroskar/component-library"> Github</a>
             </li>
             <li class="nav-item">
-                <button class="btn btn-link-secondary justify-content-start font-large" >
+                <button id="toggle-theme" class="btn btn-link-secondary justify-content-start font-large" >
                     <span class="material-icons"> dark_mode </span>
                 </button>
             </li>
@@ -77,6 +77,12 @@
             </li>
             <li class="list-item">
                 <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#toast">  Toast </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#grid">  Grid </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#slider">  Slider </a>
             </li>
         </ul>
     </aside>
@@ -868,7 +874,7 @@
                 </div>
             </script>
 
-            <h2>Card with Text Overlay and Dismiss</h2>
+            <h2 class="doc-sub-header">Card with Text Overlay and Dismiss</h2>
             <p class="doc-para">
                 Card also has parameter for displaying text overlay on to to display products Out-of-stock or Unavailable products. Also it has one cancel button
             </p>
@@ -966,7 +972,7 @@
                 </div>
             </script>
 
-            <h2>Card Horizontal</h2>
+            <h2 class="doc-sub-header">Card Horizontal</h2>
             <p class="doc-para">
                 Horizontal cards are different variation of the card. Here the components are all aligned horizontally. It can be used in product listing or even in smaller screens or to display products at checkout it totally depends on you design. 
             </p>
@@ -1025,7 +1031,7 @@
                 </div>
             </script>
 
-            <h2>Card List</h2>
+            <h2 class="doc-sub-header">Card List</h2>
             <p class="doc-para">
                 Card lists are used to display list products in a vertical list as horizontal items. To make this card use <span class="text-highlight">card-list-item</span> along with <span class="text-highlight">card</span> and <span class="text-highlight">card-horizontal</span> 
             </p>
@@ -1093,7 +1099,7 @@
                 </div>
             </script>
 
-            <h2>Text Card</h2>
+            <h2 class="doc-sub-header">Text Card</h2>
             <p class="doc-para">
                 Text card can be used to display a message to the user or to convey information about another product or any short note or give a brief description on any topic.
             </p>
@@ -1885,6 +1891,153 @@
                 </div>
                 <div class="toast toast-primary">
                     <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+            </script>
+            
+        </div>
+        
+        <div id="grid">
+            <h1 class="doc-header">Grid</h1>
+            <p class="doc-para">
+                Grid layouts are used to provide consistent UI and also helps in arranging the components logically.Grids are widely supported by browsers and proves useful while arranging components. We have 2 types of grids here:
+            </p>
+            <h2 class="doc-sub-header">2 Column Grid</h2>
+            <p class="doc-para">
+                The 2 column grid proves useful in providing equal columns for the element. to use 2 column grid use class <span class="text-highlight">grid-col-2</span>. Grid 2 columns also comes with variations one is <span class="text-highlight">grid-auto-1</span> arranges left column according to its specified width and the right column takes up remaining space. Another class <span class="text-highlight">grid-auto-2</span> does vice versa of this.
+            </p>
+            <p class="doc-para">
+                Note that any elements inside grid are no way related to grid and shouldn't be used. Tose are for visual representations only.
+            </p>
+            <div class="component component-vertical">
+                <div class="grid-col-2 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                </div>
+                <h4 class="text-align-center w-100">2 Column Grid</h4>
+                <div class="grid-col-2 grid-col-auto-1 p-1 w-100">
+                    <div class="grid-element-1">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                </div>
+                <h4 class="text-align-center w-100">2 Column Grid with left auto width</h4>
+                <div class="grid-col-2 grid-col-auto-2 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-1">Element 2</div>
+                </div>
+                <h4 class="text-align-center w-100">2 Column Grid with right auto width</h4>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="grid-col-2 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                </div>
+                <div class="grid-col-2 grid-col-auto-1 p-1 w-100">
+                    <div class="grid-element-1">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                </div>
+                <div class="grid-col-2 grid-col-auto-2 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-1">Element 2</div>
+                </div>
+            </script>
+            <h2 class="doc-sub-header">3 Column Grid</h2>
+            <p class="doc-para">
+                Its same as above just the difference is we provide 3 columns here. To use 3 column grid use class <span class="text-highlight">grid-col-2</span>. It also has one variation where the extreme columns are set auto and center column takes free space. To use it add class <span class="text-highlight">grid-auto-2</span> along with base <span class="text-highlight">grid-col-3</span>
+            </p>
+            <div class="component component-vertical">
+                <div class="grid-col-3 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                    <div class="grid-element-2">Element 3</div>
+                </div>
+                <h4 class="text-align-center w-100">2 column Grid</h4>
+                <div class="grid-col-3 grid-col-3-auto p-1 w-100">
+                    <div class="grid-element-1">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                    <div class="grid-element-1">Element 3</div>
+                </div>
+                <h4 class="text-align-center w-100">2 Column Grid with left and right column auto width</h4>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="grid-col-3 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                    <div class="grid-element-2">Element 3</div>
+                </div>
+                <div class="grid-col-3 grid-col-3-auto p-1 w-100">
+                    <div class="grid-element-1">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                    <div class="grid-element-1">Element 3</div>
+                </div>
+            </script>
+            
+        </div>
+
+        <div id="slider">
+            <h1 class="doc-header">Slider</h1>
+            <p class="doc-para">
+                Sliders are special kind of inputs used to take values from a specified range. Slider can be also used to represent elements like volume, range of values in shopping sites.
+            </p>
+            <h2 class="doc-sub-header">Primary Slider</h2>
+            <p class="doc-para">
+                To use primary slider provide we use one wrapper class <span class="text-highlight">slider-wrapper</span> which takes two classes <span class="text-highlight">slider</span> for slider input and <span class="text-highlight">slider-range</span> for displaying range of slider. 
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">slider-range</span> takes the interval values to display the intervals of range. It takes class <span class="text-highlight">range-interval</span> for representing one interval. The interval takes one <span class="text-highlight">&lt;label&gt;</span> tag to repsent value.
+            </p>
+            <div class="component component-vertical">
+                <div class="slider-wrapper">
+                    <div class="slider-range">
+                        <div class="range-interval">
+                            <label >0</label>
+                        </div>
+                        <div class="range-interval">
+                            <label >5000</label>
+                        </div>
+                    </div>
+                    <input type="range" value="1000" min="0" max="5000" class="slider">
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="slider-wrapper">
+                    <div class="slider-range">
+                        <div class="range-interval">
+                            <label >0</label>
+                        </div>
+                        <div class="range-interval">
+                            <label >5000</label>
+                        </div>
+                    </div>
+                    <input type="range" value="1000" min="0" max="5000" class="slider">
+                </div>
+            </script>
+            <h2 class="doc-sub-header">Secondary Slider</h2>
+            <p class="doc-para">
+                Secondary Slider uses black color to represent slider. To use slider use the same classes as that of above just provide this <span class="text-highlight">slider-secondary</span> class along with base class <span class="text-highlight">slider-wrapper</span>.
+            </p>
+            <div class="component component-vertical">
+                <div class="slider-wrapper slider-secondary">
+                    <div class="slider-range">
+                        <div class="range-interval">
+                            <label >0</label>
+                        </div>
+                        <div class="range-interval">
+                            <label >5000</label>
+                        </div>
+                    </div>
+                    <input type="range" value="1000" min="0" max="5000" class="slider">
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="slider-wrapper slider-secondary">
+                    <div class="slider-range">
+                        <div class="range-interval">
+                            <label >0</label>
+                        </div>
+                        <div class="range-interval">
+                            <label >5000</label>
+                        </div>
+                    </div>
+                    <input type="range" value="1000" min="0" max="5000" class="slider">
                 </div>
             </script>
             

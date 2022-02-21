@@ -18,6 +18,7 @@
     display: flex;
     font-size: 2.4rem;
     padding: 0;
+    color: revert;
 }
 
 .alert-body{
@@ -35,6 +36,12 @@
 }
 
 .alert-text{
+    font-size: 1.4rem;
+    color: var(--COLOR-TEXT-BLACK);
+    overflow-wrap: break-word ;
+}
+
+.alert-bg-default .alert-text{
     font-size: 1.4rem;
     color: var(--OFF-BLACK);
     overflow-wrap: break-word ;

@@ -63,7 +63,43 @@ switch(value) {
     case "toast":
         activeTab(componentList,arrayOfListItems[12])
         break;
+    case "grid":
+        activeTab(componentList,arrayOfListItems[13])
+        break;
+    case "slider":
+        activeTab(componentList,arrayOfListItems[14])
+        break;
     default:
         activeTab(componentList,arrayOfListItems[1]);
         break;
   }
+
+//   DARK MODE LOGIC
+
+let theme = localStorage.getItem("data-theme");
+const toggleThemeButton = document.querySelector("#toggle-theme");
+
+const toggleTheme = ()=>{
+    theme = localStorage.getItem("data-theme")
+    if(theme === "dark"){
+        document.documentElement.setAttribute("data-theme","light")
+        localStorage.setItem("data-theme","light")
+        toggleThemeButton.querySelector("span").innerHTML = "dark_mode"
+    }else{
+        document.documentElement.setAttribute("data-theme","dark")
+        localStorage.setItem("data-theme","dark")
+        toggleThemeButton.querySelector("span").innerHTML = "light_mode"
+
+    }
+}
+
+if(theme === "dark"){
+    document.documentElement.setAttribute("data-theme","dark")
+    toggleThemeButton.querySelector("span").innerHTML = "light_mode"
+}else{
+    document.documentElement.setAttribute("data-theme","light")
+    toggleThemeButton.querySelector("span").innerHTML = "dark_mode"
+
+}
+
+toggleThemeButton.addEventListener("click",toggleTheme)

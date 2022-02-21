@@ -6,9 +6,29 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* DARK MODE */
+
+html[data-theme="dark"] .box-shadow-100{
+    box-shadow: 0 5px 2.5rem 2px var(--OFF-WHITE);
+}
+
+
+html[data-theme="dark"] .doc-body{
+    --COLOR-PRIMARY-50-SHADE-1: #d7f8e318;
+    background-color: var(--OFF-WHITE);
+}
+
+html[data-theme="dark"] .landing{
+    --COLOR-PRIMARY-50-SHADE-1: #d7f8e318;
+    background-color: var(--OFF-WHITE);
+}
+
+
+
 :root{
     
-    --COLOR-PRIMARY-50-SHADE-1: #d7f8e3ab;
+    --COLOR-PRIMARY-50-SHADE-1: #d7f8e379;
 }
 
 .component {
@@ -261,3 +281,42 @@ html {
     background-color: var(--PRIMARY-400);
 }
 
+
+
+/* GRID EXAMPLE ELEMENTS */
+
+.grid-element-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 15rem;
+    font-size: 1.6rem;
+    background-color: var(--GREY);
+    border: 1px solid var(--OFF-BLACK);
+    border-radius: 3px;
+}
+
+.grid-element-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: var(--GREY);
+    border: 1px solid var(--OFF-BLACK);
+    border-radius: 3px;
+}
+
+.grid-element-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 10rem;
+    font-size: 1.6rem;
+    background-color: var(--GREY);
+    border: 1px solid var(--OFF-BLACK);
+    border-radius: 3px;
+}

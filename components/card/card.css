@@ -48,7 +48,7 @@
     height: 100%;
     position: absolute;
     background-color: var(--COLOR-SHADOW-3);
-    color: var(--WHITE);
+    color: var(--COLOR-TEXT-WHITE);
     display: flex;
     align-items: center;
     font-size: 2.2rem;
@@ -193,10 +193,12 @@
 }
 
 .card-cta {
+    
     display: flex;
     flex-direction: column;
     flex-grow: 2;
     justify-content: space-between;
+    color: var(--OFF-BLACK);
 }
 
 .card-price {

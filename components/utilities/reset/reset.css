@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+* {
+    
+    color: var(--COLOR-TEXT-BLACK);
+}
 
 :root {
     font-size: 62.5%;
