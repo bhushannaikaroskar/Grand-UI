@@ -8,11 +8,11 @@
 
 .rating-icon {
     font-size: 2.8rem;
-    color: lightgray;
+    color: var(--COLOR-STAR-DEFAULT);
 }
 
 .rating-input:checked + .rating-icon {
-    color: gold;
+    color: var(--COLOR-STAR-SELECTED);
 }
 
 .ratings-primary .rating-icon{
