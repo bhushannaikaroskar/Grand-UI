@@ -57,6 +57,12 @@ switch(value) {
     case "navbar":
         activeTab(componentList,arrayOfListItems[10])
         break;
+    case "ratings":
+        activeTab(componentList,arrayOfListItems[11])
+        break;
+    case "toast":
+        activeTab(componentList,arrayOfListItems[12])
+        break;
     default:
         activeTab(componentList,arrayOfListItems[1]);
         break;

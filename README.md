@@ -180,6 +180,26 @@ Check out about Navigation: [https://grand-ui.netlify.app/getting-started/docume
 
 <hr>
 
+### Ratings
+
+Star Ratings are used in many places like while filtering out products or while giving out reviews. Grand UI majorly provides with two types of rating in different color:
+
+- Normal Star Rating 
+- Primary Star Rating
+
+
+Check out about Ratings: [https://grand-ui.netlify.app/getting-started/documentation.html#ratings](https://grand-ui.netlify.app/getting-started/documentation.html#ratings)
+
+<hr>
+
+### Toast
+
+Toasts are small messages that can be used to display so actions of user without interrupting the flow of event. Toast messages generally disappears after seconds. Grand UI majorly provides with different colors of toast such as red, yellow, green, primary and default is black.
+
+
+Check out about Toasts: [https://grand-ui.netlify.app/getting-started/documentation.html#toast](https://grand-ui.netlify.app/getting-started/documentation.html#toast)
+
+<hr>
 
 Implementation of [grand UI](https://grand-ui.netlify.app)
 

@@ -1,0 +1,24 @@
+.ratings-container {
+    display: flex;
+}
+
+.rating-input {
+    display: none;
+}
+
+.rating-icon {
+    font-size: 2.8rem;
+    color: var(--COLOR-STAR-DEFAULT);
+}
+
+.rating-input:checked + .rating-icon {
+    color: var(--COLOR-STAR-SELECTED);
+}
+
+.ratings-primary .rating-icon{
+    color: var(--PRIMARY-100);
+}
+
+.ratings-primary .rating-input:checked + .rating-icon {
+    color: var(--PRIMARY-400)
+}

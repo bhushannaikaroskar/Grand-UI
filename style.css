@@ -6,6 +6,11 @@ html {
     scroll-behavior: smooth;
 }
 
+:root{
+    
+    --COLOR-PRIMARY-50-SHADE-1: #d7f8e3ab;
+}
+
 .component {
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +19,7 @@ html {
     align-items: flex-end;
     padding: 3rem;
     border-radius: 5px;
-    background-color: var(--PRIMARY-50);
+    background-color: var(--COLOR-PRIMARY-50-SHADE-1);
     border: 1px solid var(--PRIMARY-200);
 }
 
