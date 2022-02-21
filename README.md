@@ -201,6 +201,18 @@ Check out about Toasts: [https://grand-ui.netlify.app/getting-started/documentat
 
 <hr>
 
+### Slider
+
+Sliders are special kind of inputs used to take values from a specified range. Slider can be also used to represent elements like volume, range of values in shopping sites. Grand UI provide 2 basic type of slider:
+
+- Primary Slider
+- Secondary Slider
+
+
+Check out about Slider: [https://grand-ui.netlify.app/getting-started/documentation.html#slider](https://grand-ui.netlify.app/getting-started/documentation.html#slider)
+
+<hr>
+
 Implementation of [grand UI](https://grand-ui.netlify.app)
 
 You can follow me on :

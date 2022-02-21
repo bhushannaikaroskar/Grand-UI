@@ -78,6 +78,9 @@
             <li class="list-item">
                 <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#toast">  Toast </a>
             </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#slider">  Slider </a>
+            </li>
         </ul>
     </aside>
     <main class="doc-main doc-scroller ">
@@ -1885,6 +1888,77 @@
                 </div>
                 <div class="toast toast-primary">
                     <p class="toast-text">Can't send photo. Retry in 5 seconds.</p>
+                </div>
+            </script>
+            
+        </div>
+        
+        <div id="slider">
+            <h1 class="doc-header">Slider</h1>
+            <p class="doc-para">
+                Sliders are special kind of inputs used to take values from a specified range. Slider can be also used to represent elements like volume, range of values in shopping sites.
+            </p>
+            <h2 class="doc-sub-header">Primary Slider</h2>
+            <p class="doc-para">
+                To use primary slider provide we use one wrapper class <span class="text-highlight">slider-wrapper</span> which takes two classes <span class="text-highlight">slider</span> for slider input and <span class="text-highlight">slider-range</span> for displaying range of slider. 
+            </p>
+            <p class="doc-para">
+                <span class="text-highlight">slider-range</span> takes the interval values to display the intervals of range. It takes class <span class="text-highlight">range-interval</span> for representing one interval. The interval takes one <span class="text-highlight">&lt;label&gt;</span> tag to repsent value.
+            </p>
+            <div class="component component-vertical">
+                <div class="slider-wrapper">
+                    <div class="slider-range">
+                        <div class="range-interval">
+                            <label >0</label>
+                        </div>
+                        <div class="range-interval">
+                            <label >5000</label>
+                        </div>
+                    </div>
+                    <input type="range" value="1000" min="0" max="5000" class="slider">
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="slider-wrapper">
+                    <div class="slider-range">
+                        <div class="range-interval">
+                            <label >0</label>
+                        </div>
+                        <div class="range-interval">
+                            <label >5000</label>
+                        </div>
+                    </div>
+                    <input type="range" value="1000" min="0" max="5000" class="slider">
+                </div>
+            </script>
+            <h2 class="doc-sub-header">Secondary Slider</h2>
+            <p class="doc-para">
+                Secondary Slider uses black color to represent slider. To use slider use the same classes as that of above just provide this <span class="text-highlight">slider-secondary</span> class along with base class <span class="text-highlight">slider-wrapper</span>.
+            </p>
+            <div class="component component-vertical">
+                <div class="slider-wrapper slider-secondary">
+                    <div class="slider-range">
+                        <div class="range-interval">
+                            <label >0</label>
+                        </div>
+                        <div class="range-interval">
+                            <label >5000</label>
+                        </div>
+                    </div>
+                    <input type="range" value="1000" min="0" max="5000" class="slider">
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="slider-wrapper slider-secondary">
+                    <div class="slider-range">
+                        <div class="range-interval">
+                            <label >0</label>
+                        </div>
+                        <div class="range-interval">
+                            <label >5000</label>
+                        </div>
+                    </div>
+                    <input type="range" value="1000" min="0" max="5000" class="slider">
                 </div>
             </script>
             
