@@ -63,8 +63,11 @@ switch(value) {
     case "toast":
         activeTab(componentList,arrayOfListItems[12])
         break;
-    case "slider":
+    case "grid":
         activeTab(componentList,arrayOfListItems[13])
+        break;
+    case "slider":
+        activeTab(componentList,arrayOfListItems[14])
         break;
     default:
         activeTab(componentList,arrayOfListItems[1]);

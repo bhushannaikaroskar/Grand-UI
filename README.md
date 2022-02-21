@@ -43,6 +43,10 @@ To import this library directly into your main CSS put this below code at top in
 1. [Text-Utilities](#text-utilities)
 1. [List](#list)
 1. [Navigation](#navigation)
+1. [Ratings](#ratings)
+1. [Toast](#toast)
+1. [Grid](#grid)
+1. [Slider](#slider)
 
 <hr>
 
@@ -198,6 +202,18 @@ Toasts are small messages that can be used to display so actions of user without
 
 
 Check out about Toasts: [https://grand-ui.netlify.app/getting-started/documentation.html#toast](https://grand-ui.netlify.app/getting-started/documentation.html#toast)
+
+<hr>
+
+### Grid
+
+Grid layouts are used to provide consistent UI and also helps in arranging the components logically.We have following grid-layouts:
+
+- Grid 2 columns
+- Grid 3 columns
+
+
+Check out about Slider: [https://grand-ui.netlify.app/getting-started/documentation.html#slider](https://grand-ui.netlify.app/getting-started/documentation.html#slider)
 
 <hr>
 

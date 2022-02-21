@@ -1,0 +1,21 @@
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-col-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-col-auto-1 {
+    grid-template-columns: auto 1fr;
+}
+
+.grid-col-auto-2 {
+    grid-template-columns: 1fr auto;
+}
+
+.grid-col-3-auto{
+    grid-template-columns: auto 1fr auto;
+}

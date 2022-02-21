@@ -79,6 +79,9 @@
                 <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#toast">  Toast </a>
             </li>
             <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#grid">  Grid </a>
+            </li>
+            <li class="list-item">
                 <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#slider">  Slider </a>
             </li>
         </ul>
@@ -1893,6 +1896,82 @@
             
         </div>
         
+        <div id="grid">
+            <h1 class="doc-header">Grid</h1>
+            <p class="doc-para">
+                Grid layouts are used to provide consistent UI and also helps in arranging the components logically.Grids are widely supported by browsers and proves useful while arranging components. We have 2 types of grids here:
+            </p>
+            <h2 class="doc-sub-header">2 Column Grid</h2>
+            <p class="doc-para">
+                The 2 column grid proves useful in providing equal columns for the element. to use 2 column grid use class <span class="text-highlight">grid-col-2</span>. Grid 2 columns also comes with variations one is <span class="text-highlight">grid-auto-1</span> arranges left column according to its specified width and the right column takes up remaining space. Another class <span class="text-highlight">grid-auto-2</span> does vice versa of this.
+            </p>
+            <p class="doc-para">
+                Note that any elements inside grid are no way related to grid and shouldn't be used. Tose are for visual representations only.
+            </p>
+            <div class="component component-vertical">
+                <div class="grid-col-2 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                </div>
+                <h4 class="text-align-center w-100">2 Column Grid</h4>
+                <div class="grid-col-2 grid-col-auto-1 p-1 w-100">
+                    <div class="grid-element-1">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                </div>
+                <h4 class="text-align-center w-100">2 Column Grid with left auto width</h4>
+                <div class="grid-col-2 grid-col-auto-2 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-1">Element 2</div>
+                </div>
+                <h4 class="text-align-center w-100">2 Column Grid with right auto width</h4>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="grid-col-2 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                </div>
+                <div class="grid-col-2 grid-col-auto-1 p-1 w-100">
+                    <div class="grid-element-1">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                </div>
+                <div class="grid-col-2 grid-col-auto-2 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-1">Element 2</div>
+                </div>
+            </script>
+            <h2 class="doc-sub-header">3 Column Grid</h2>
+            <p class="doc-para">
+                Its same as above just the difference is we provide 3 columns here. To use 3 column grid use class <span class="text-highlight">grid-col-2</span>. It also has one variation where the extreme columns are set auto and center column takes free space. To use it add class <span class="text-highlight">grid-auto-2</span> along with base <span class="text-highlight">grid-col-3</span>
+            </p>
+            <div class="component component-vertical">
+                <div class="grid-col-3 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                    <div class="grid-element-2">Element 3</div>
+                </div>
+                <h4 class="text-align-center w-100">2 column Grid</h4>
+                <div class="grid-col-3 grid-col-3-auto p-1 w-100">
+                    <div class="grid-element-1">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                    <div class="grid-element-1">Element 3</div>
+                </div>
+                <h4 class="text-align-center w-100">2 Column Grid with left and right column auto width</h4>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="grid-col-3 p-1 w-100">
+                    <div class="grid-element-2">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                    <div class="grid-element-2">Element 3</div>
+                </div>
+                <div class="grid-col-3 grid-col-3-auto p-1 w-100">
+                    <div class="grid-element-1">Element 1</div>
+                    <div class="grid-element-2">Element 2</div>
+                    <div class="grid-element-1">Element 3</div>
+                </div>
+            </script>
+            
+        </div>
+
         <div id="slider">
             <h1 class="doc-header">Slider</h1>
             <p class="doc-para">

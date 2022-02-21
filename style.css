@@ -261,3 +261,42 @@ html {
     background-color: var(--PRIMARY-400);
 }
 
+
+
+/* GRID EXAMPLE ELEMENTS */
+
+.grid-element-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 15rem;
+    font-size: 1.6rem;
+    background-color: var(--GREY);
+    border: 1px solid var(--OFF-BLACK);
+    border-radius: 3px;
+}
+
+.grid-element-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 100%;
+    font-size: 1.6rem;
+    background-color: var(--GREY);
+    border: 1px solid var(--OFF-BLACK);
+    border-radius: 3px;
+}
+
+.grid-element-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 10rem;
+    font-size: 1.6rem;
+    background-color: var(--GREY);
+    border: 1px solid var(--OFF-BLACK);
+    border-radius: 3px;
+}
