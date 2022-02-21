@@ -1,0 +1,27 @@
+.ratings-container {
+    display: flex;
+}
+
+.rating-input {
+    display: none;
+}
+
+.rating-icon {
+    font-size: 2.8rem;
+    color: lightgray;
+}
+
+.rating-input:checked + .rating-icon {
+    color: gold;
+}
+
+.ratings-primary {
+}
+
+.ratings-primary .rating-icon{
+    color: var(--PRIMARY-100);
+}
+
+.ratings-primary .rating-input:checked + .rating-icon {
+    color: var(--PRIMARY-400)
+}

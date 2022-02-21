@@ -57,7 +57,10 @@ switch(value) {
     case "navbar":
         activeTab(componentList,arrayOfListItems[10])
         break;
+    case "navbar":
+        activeTab(componentList,arrayOfListItems[11])
+        break;
     default:
-        activeTab(componentList,arrayOfListItems[1]);
+        activeTab(componentList,arrayOfListItems[11]);
         break;
   }

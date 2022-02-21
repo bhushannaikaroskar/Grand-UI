@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/getting-started/prism/prism.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favi/favicon-16x16.png">
     <title>Component Library Documentation</title>
 </head>
 
@@ -69,6 +71,9 @@
             </li>
             <li class="list-item">
                 <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#navbar">  Navigation </a>
+            </li>
+            <li class="list-item">
+                <a class="btn btn-link-secondary btn-focus-primary w-100 justify-content-start font-large p-y-0_5"href="#ratings">  Ratings </a>
             </li>
         </ul>
     </aside>
@@ -1711,6 +1716,119 @@
                         </li>
                     </ul>
                 </nav>
+            </script>
+        </div>
+
+        <div id="ratings">
+            <h1 class="doc-header">Ratings</h1>
+            <p class="doc-para">
+                Ratings are used in many places like while filtering out products or while giving out reviews. Ratings are also used to represent visual representation of information like in reviews.
+            </p>
+            <h2 class="doc-sub-header">Standard Rating</h2>
+            <p class="doc-para">
+                To use standard ratings use class <span class="text-highlight">ratings-container</span> to wrap the stars. This <span class="text-highlight">ratings-container</span> containers takes 5 <span class="text-highlight">&lt;label&gt;</span> tags. This label tags take two elements one is <span class="text-highlight">&lt;input&gt;</span> tag and another one the icon itself. Give the <span class="text-highlight">&lt;input&gt;</span> tag class  <span class="text-highlight">rating-input</span> and add class  <span class="text-highlight">rating-icon</span> to icons
+            </p>
+            <div class="component">
+                <div class="ratings-container">
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                </div>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="ratings-container font-large">
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                </div>
+            </script>
+            
+            <h2 class="doc-sub-header">Primary Rating</h2>
+            <p class="doc-para">
+                Primary ratings are same as that of standard ratings only difference is it uses primary colors to represent stars. To make ratings use primary colors use the same class as above just add one extra class <span class="text-highlight">ratings-primary</span> along with base class <span class="text-highlight">ratings-container</span>
+            </p>
+            <div class="component">
+                <div class="ratings-container ratings-primary">
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                </div>
+            </div>
+            
+            <script type="text/plain" class="line-numbers language-markup">
+                <div class="ratings-container ratings-primary font-large">
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" checked disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" class="rating-input" disabled>
+                        <span class="material-icons rating-icon">star</span>
+                    </label>
+                </div>
             </script>
         </div>
     </main>
