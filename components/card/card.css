@@ -182,6 +182,7 @@
 
 .card-title {
     font-size: 1.8rem;
+    color: var(--OFF-BLACK);
 }
 
 .card-description {
@@ -239,6 +240,7 @@
 .text-card {
     min-height: auto;
     max-height: auto;
+    height: revert;
 }
 
 .text-card .card-title {
