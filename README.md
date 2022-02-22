@@ -58,7 +58,7 @@ Types of avatars:
 - Square Avatars
 
 
-Check out about Avatars: [https://grand-ui.netlify.app/getting-started/documentation.html#avatar](https://grand-ui.netlify.app/getting-started/documentation.html#avatar)
+Check out about Avatars: https://grand-ui.netlify.app/getting-started/documentation.html#avatar
 
 <hr>
 
@@ -69,7 +69,7 @@ Alerts are used to display messages that may require user attention. Here we can
 - Warning Alert
 - Error Alert
 
-Check out about Alerts: [https://grand-ui.netlify.app/getting-started/documentation.html#alert](https://grand-ui.netlify.app/getting-started/documentation.html#alert)
+Check out about Alerts: https://grand-ui.netlify.app/getting-started/documentation.html#alert
 
 <hr>
 
@@ -84,7 +84,7 @@ We Have different types of badges:
 - icons with badge
 - avatar with badge (provided in Avatar's component)
 
-Check out about Badges: [https://grand-ui.netlify.app/getting-started/documentation.html#badge](https://grand-ui.netlify.app/getting-started/documentation.html#badge)
+Check out about Badges: https://grand-ui.netlify.app/getting-started/documentation.html#badge
 
 <hr>
 
@@ -104,7 +104,7 @@ Buttons can be used for different purposes in navbar on cards, etc. Here in comp
   - secondary link Button
 - Floating Action button
 
-Check out about Buttons: [https://grand-ui.netlify.app/getting-started/documentation.html#button](https://grand-ui.netlify.app/getting-started/documentation.html#button)
+Check out about Buttons: https://grand-ui.netlify.app/getting-started/documentation.html#button
 
 <hr>
 
@@ -119,7 +119,7 @@ Cards serve the purpose of assembling similar list of information together. Card
 - Card with Badge, Dismiss and WishList Icon
 - Text Card
 
-Check out about Cards: [https://grand-ui.netlify.app/getting-started/documentation.html#cards](https://grand-ui.netlify.app/getting-started/documentation.html#cards)
+Check out about Cards: https://grand-ui.netlify.app/getting-started/documentation.html#cards
 
 <hr>
 
@@ -129,7 +129,7 @@ Images component can be used to define responsive images that can adapt to the p
 - Responsive Image
 - Round Image
 
-Check out about Image: [https://grand-ui.netlify.app/getting-started/documentation.html#image](https://grand-ui.netlify.app/getting-started/documentation.html#image)
+Check out about Image: https://grand-ui.netlify.app/getting-started/documentation.html#image
 
 <hr>
 
@@ -141,7 +141,7 @@ Input fields can be used to take data from user or for taking inputs for authent
 - Full width Input
 - Multiline Input or Comments
 
-Check out about Input: [https://grand-ui.netlify.app/getting-started/documentation.html#input](https://grand-ui.netlify.app/getting-started/documentation.html#input)
+Check out about Input: https://grand-ui.netlify.app/getting-started/documentation.html#input
 
 <hr>
 
@@ -157,7 +157,7 @@ Grand Ui have Utilities foe the following:
 - Font Weight
 - Font Size
 
-Check out about Text utilities: [https://grand-ui.netlify.app/getting-started/documentation.html#text-utilities](https://grand-ui.netlify.app/getting-started/documentation.html#text-utilities)
+Check out about Text utilities: https://grand-ui.netlify.app/getting-started/documentation.html#text-utilities
 
 
 <hr>
@@ -171,7 +171,7 @@ Different Lists provided are:
 - Stacked List
 - Notification List
 
-Check out about Lists: [https://grand-ui.netlify.app/getting-started/documentation.html#lists](https://grand-ui.netlify.app/getting-started/documentation.html#lists)
+Check out about Lists: https://grand-ui.netlify.app/getting-started/documentation.html#lists
 
 <hr>
 
@@ -180,7 +180,7 @@ Check out about Lists: [https://grand-ui.netlify.app/getting-started/documentati
 Navigation bar is widely used component. They serves the purpose of navigating from one page to another. Grand UI provides us with a Horizontal Navbar
 
 
-Check out about Navigation: [https://grand-ui.netlify.app/getting-started/documentation.html#navbar](https://grand-ui.netlify.app/getting-started/documentation.html#navbar)
+Check out about Navigation: https://grand-ui.netlify.app/getting-started/documentation.html#navbar
 
 <hr>
 
@@ -189,7 +189,7 @@ Check out about Navigation: [https://grand-ui.netlify.app/getting-started/docume
 Modal can be used for different purposes which is kind of a popup boxes that appear on screen. These modals usually require some actions to cancel or handle them. 
 
 
-Check out about Modal: [https://grand-ui.netlify.app/getting-started/documentation.html#modal](https://grand-ui.netlify.app/getting-started/documentation.html#modal)
+Check out about Modal: https://grand-ui.netlify.app/getting-started/documentation.html#modal
 
 <hr>
 
@@ -201,7 +201,7 @@ Star Ratings are used in many places like while filtering out products or while 
 - Primary Star Rating
 
 
-Check out about Ratings: [https://grand-ui.netlify.app/getting-started/documentation.html#ratings](https://grand-ui.netlify.app/getting-started/documentation.html#ratings)
+Check out about Ratings: https://grand-ui.netlify.app/getting-started/documentation.html#ratings
 
 <hr>
 
@@ -210,7 +210,7 @@ Check out about Ratings: [https://grand-ui.netlify.app/getting-started/documenta
 Toasts are small messages that can be used to display so actions of user without interrupting the flow of event. Toast messages generally disappears after seconds. Grand UI majorly provides with different colors of toast such as red, yellow, green, primary and default is black.
 
 
-Check out about Toasts: [https://grand-ui.netlify.app/getting-started/documentation.html#toast](https://grand-ui.netlify.app/getting-started/documentation.html#toast)
+Check out about Toasts: https://grand-ui.netlify.app/getting-started/documentation.html#toast
 
 <hr>
 
@@ -222,7 +222,7 @@ Grid layouts are used to provide consistent UI and also helps in arranging the c
 - Grid 3 columns
 
 
-Check out about Slider: [https://grand-ui.netlify.app/getting-started/documentation.html#slider](https://grand-ui.netlify.app/getting-started/documentation.html#slider)
+Check out about Slider: https://grand-ui.netlify.app/getting-started/documentation.html#slider
 
 <hr>
 
