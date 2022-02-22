@@ -78,14 +78,31 @@ const value = arr[1];
         activeTab(componentList,objectOfListItems["slider"])
         break;
     default:
-        activeTab(componentList,arrayOfListItems[1]);
+        activeTab(componentList,objectOfListItems["avatar"]);
         break;
   }
+
+
+// RESPONSIVE WEBSITE 
+
+const hamburgerButton = document.querySelector("#doc-ham");
+const sidebar = document.querySelector(".doc-sidebar");
+
+hamburgerButton.addEventListener("click",()=>{
+    sidebar.classList.contains("sidebar-hidden")
+    ? sidebar.classList.remove("sidebar-hidden") 
+    :sidebar.classList.add("sidebar-hidden")
+})
+
+arrayOfListItems.forEach((element)=>{
+    element.addEventListener("click",(e)=>sidebar.classList.add("sidebar-hidden"))
+})
 
 //   DARK MODE LOGIC
 
 let theme = localStorage.getItem("data-theme");
 const toggleThemeButton = document.querySelector("#toggle-theme");
+const logo = document.querySelector(".nav-logo img");
 
 const toggleTheme = ()=>{
     theme = localStorage.getItem("data-theme")
@@ -93,21 +110,23 @@ const toggleTheme = ()=>{
         document.documentElement.setAttribute("data-theme","light")
         localStorage.setItem("data-theme","light")
         toggleThemeButton.querySelector("span").innerHTML = "dark_mode"
+        logo.src = "/assets/landing/grand-logo.png"
     }else{
         document.documentElement.setAttribute("data-theme","dark")
         localStorage.setItem("data-theme","dark")
         toggleThemeButton.querySelector("span").innerHTML = "light_mode"
-
+        logo.src = "/assets/landing/grand-logo-dark.png"
     }
 }
 
 if(theme === "dark"){
     document.documentElement.setAttribute("data-theme","dark")
     toggleThemeButton.querySelector("span").innerHTML = "light_mode"
+    logo.src = "/assets/landing/grand-logo-dark.png"
 }else{
     document.documentElement.setAttribute("data-theme","light")
     toggleThemeButton.querySelector("span").innerHTML = "dark_mode"
-
+    logo.src = "/assets/landing/grand-logo.png"
 }
 
 toggleThemeButton.addEventListener("click",toggleTheme)
@@ -135,4 +154,3 @@ modalDisplay.addEventListener("click",()=>{
 modalCenterDisplay.addEventListener("click",()=>{
     modalCenterDisplay.nextElementSibling.classList.add("modal-active")
 })
-

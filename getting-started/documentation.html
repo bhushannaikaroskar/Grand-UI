@@ -18,9 +18,6 @@
         </a>
         <ul class="list list-inline">
             <li class="nav-item">
-                <a class="btn btn-link-secondary justify-content-start font-large" href="/getting-started/documentation.html" > Documentation </a>
-            </li>
-            <li class="nav-item">
                 <a class="btn btn-link-secondary justify-content-start font-large" target="_blank" href="https://github.com/bhushannaikaroskar/component-library"> Github</a>
             </li>
             <li class="nav-item">
@@ -28,9 +25,12 @@
                     <span class="material-icons"> dark_mode </span>
                 </button>
             </li>
+            <button id="doc-ham" class="doc-hamburger btn btn-link-secondary justify-content-start">
+                <span class="material-icons font-x-large">menu</span>
+            </button>
         </ul>
     </nav>
-    <aside class="doc-sidebar doc-scroller-hide p-2">
+    <aside class="doc-sidebar doc-scroller-hide p-2 p-x-1 sidebar-hidden">
         <ul class="list">
             <div class="list-tile font-primary font-x-large fw-600">Getting Started</div>
             <li class="list-item">
@@ -739,7 +739,7 @@
             <div class="component align-center justify-content-center">
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="">
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card image">
                     </div>
                     <div class="card-content-wrapper ">
                         <div class="card-content">
@@ -764,7 +764,7 @@
             <script type="text/plain" class="line-numbers language-markup">
                 <div class="card">
                     <div class="card-img-wrapper">
-                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="">
+                        <img class="card-img" src="/assets/Photos/product-1.jpg" alt="card image">
                     </div>
                     <div class="card-content-wrapper">
                         <div class="card-content">
@@ -1651,7 +1651,12 @@
         <div id="navbar">
             <h1 class="doc-header">Navigation Bar</h1>
             <p class="doc-para">
-                Navigation bar is widely used component. To make use of it we use <span class="text-highlight">navbar</span> class on <span class="text-highlight">&lt;nav&gt;</span> tag. The <span class="text-highlight">navbar</span> in turn have two elements <span class="text-highlight">nav-logo</span> and <span class="text-highlight">list</span> class which we have already seen previously. we make use of inline list here to get all the list items. We have already seen how list inline works so we won't go in detail here.
+                Navigation bar is widely used component. They serves the purpose of navigating from one page to another.
+            </p>
+
+            <h2 class="doc-sub-header">Default Navigation Bar</h2>
+            <p class="doc-para">
+                To make use of it we use <span class="text-highlight">navbar</span> class on <span class="text-highlight">&lt;nav&gt;</span> tag. The <span class="text-highlight">navbar</span> in turn have two elements <span class="text-highlight">nav-logo</span> and <span class="text-highlight">nav-items</span> class. This arranges items flexibly in rows.
             </p>
             <p class="doc-para">
                 Navbar have in turn one independent element <span class="text-highlight">nav-search-container</span> which can be placed anywhere. This container takes <span class="text-highlight">nav-search-icon</span> for icon and <span class="text-highlight">nav-search</span> for input field. To make navbar possible we also have use various utility classes.
@@ -1659,74 +1664,146 @@
             <div class="component">
                 <nav class="navbar">
                     <div class="nav-logo">
-                        <img src="/assets/Photos/audi-logo.png" alt="">
+                        <img src="/assets/landing/grand-logo.png" alt="logo">
                     </div>
-                    <ul class="list list-inline">
-                        <li class="  flex flex-shrink-1 align-items-center">
-                            <div class="nav-search-container">
-                                <span class="material-icons font-x-large nav-search-icon">search</span>
-                                <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                    
+                    <div class="nav-search-container">
+                        <span class="material-icons font-x-large nav-search-icon">search</span>
+                        <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                    </div>
+                    <div class="nav-items">
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">person</span>
+                                <span class="font-small">Account</span>
                             </div>
-                        </li>
-                        <li class="flex align-items-center">
-                            <button class="btn btn-link-secondary justify-content-start font-medium"> Account</button>
-                        </li>
-                        <li class="flex align-items-center">
-                            <button class="btn btn-link-secondary justify-content-start  nav-item">
-                                <div class="badge-container flex flex-column">
-                                    <span class="material-icons font-x-large">favorite_border</span>
-                                    <span class="font-small">Wishlist</span>
-                                </div>
-                            </button>
-                        </li>
-                        <li class="flex align-items-center">
-                            <button class="btn btn-link-secondary justify-content-start">
-                                <div class="badge-container flex flex-column">
-                                    <span class="material-icons font-x-large">shopping_cart</span>
-                                    <span class="font-small">Cart</span>
-                                    <span class="badge">7</span>
-                                </div>
-                            </button>
-                        </li>
-                    </ul>
+                        </button>
+                    
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">favorite_border</span>
+                                <span class="font-small">Wishlist</span>
+                            </div>
+                        </button>
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">shopping_cart</span>
+                                <span class="font-small">Cart</span>
+                                <span class="badge">7</span>
+                            </div>
+                        </button>
+                    </div>
                 </nav>
             </div>
             <script type="text/plain" class="line-numbers language-markup">
                 <nav class="navbar">
-                    <!-- Nav logo goes here -->
                     <div class="nav-logo">
-                        <img src="/assets/Photos/audi-logo.png" alt="">
+                        <img src="/assets/landing/grand-logo.png" alt="logo">
                     </div>
-                    <!-- normal inline list -->
-                    <ul class="list list-inline">
-                        <li class="  flex flex-shrink-1 align-items-center">
-                            <!-- nav-search bar goes here -->
-                            <div class="nav-search-container">
-                                <span class="material-icons font-x-large nav-search-icon">search</span>
-                                <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                    
+                    <div class="nav-search-container">
+                        <span class="material-icons font-x-large nav-search-icon">search</span>
+                        <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                    </div>
+                    <div class="nav-items">
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">person</span>
+                                <span class="font-small">Account</span>
                             </div>
-                        </li>
-                        <li class="flex align-items-center">
-                            <button class="btn btn-link-secondary justify-content-start font-medium"> Account</button>
-                        </li>
-                        <li class="flex align-items-center">
-                            <button class="btn btn-link-secondary justify-content-start  nav-item">
-                                <div class="badge-container flex flex-column">
-                                    <span class="material-icons font-x-large">favorite_border</span>
-                                    <span class="font-small">Wishlist</span>
-                                </div>
-                            </button>
-                        </li>
-                        <li class="flex align-items-center">
-                            <button class="btn btn-link-secondary justify-content-start">
-                                <div class="badge-container flex flex-column">
-                                    <span class="material-icons font-x-large">shopping_cart</span>
-                                    <span class="font-small">Cart</span>
-                                    <span class="badge">7</span>
-                                </div>
-                            </button>
-                        </li>
-                    </ul>
+                        </button>
+                    
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">favorite_border</span>
+                                <span class="font-small">Wishlist</span>
+                            </div>
+                        </button>
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">shopping_cart</span>
+                                <span class="font-small">Cart</span>
+                                <span class="badge">7</span>
+                            </div>
+                        </button>
+                    </div>
+                </nav>
+            </script>
+
+            <h2 class="doc-sub-header">Responsive Navigation Bar</h2>
+            <p class="doc-para">
+                This is an addition to previous class. Here our approach is to make navbar responsive just add one extra class <span class="text-highlight">navbar-responsive</span> with base class <span class="text-highlight">navbar</span> to make it responsive. Navbar also takes one hamburger class <span class="text-highlight">nav-hamburger</span> inside <span class="text-highlight">nav-items</span>. The hamburger is button which is used to show the navbar items.
+            </p>
+            <div class="component">
+                <nav class="navbar navbar-responsive">
+                    <div class="nav-logo">
+                        <img src="/assets/landing/grand-logo.png" alt="logo">
+                    </div>
+                    
+                    <div class="nav-search-container">
+                        <span class="material-icons font-x-large nav-search-icon">search</span>
+                        <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                    </div>
+                    <div class="nav-items">
+                        <button class="nav-hamburger btn btn-link-secondary justify-content-start">
+                            <span class="material-icons font-x-large">menu</span>
+                        </button>
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">person</span>
+                                <span class="font-small">Account</span>
+                            </div>
+                        </button>
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">favorite_border</span>
+                                <span class="font-small">Wishlist</span>
+                            </div>
+                        </button>
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">shopping_cart</span>
+                                <span class="font-small">Cart</span>
+                                <span class="badge">7</span>
+                            </div>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+            <script type="text/plain" class="line-numbers language-markup">
+                <nav class="navbar">
+                    <div class="nav-logo">
+                        <img src="/assets/landing/grand-logo.png" alt="logo">
+                    </div>
+                    
+                    <div class="nav-search-container">
+                        <span class="material-icons font-x-large nav-search-icon">search</span>
+                        <input type="search" class="input-field nav-search input-rounded" placeholder="Search">
+                    </div>
+                    <div class="nav-items">
+                        <button class="nav-hamburger btn btn-link-secondary justify-content-start">
+                            <span class="material-icons font-x-large">menu</span>
+                        </button>
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">person</span>
+                                <span class="font-small">Account</span>
+                            </div>
+                        </button>
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">favorite_border</span>
+                                <span class="font-small">Wishlist</span>
+                            </div>
+                        </button>
+                        <button class="btn btn-link-secondary justify-content-start">
+                            <div class="badge-container flex flex-column">
+                                <span class="material-icons font-x-large">shopping_cart</span>
+                                <span class="font-small">Cart</span>
+                                <span class="badge">7</span>
+                            </div>
+                        </button>
+                    </div>
                 </nav>
             </script>
         </div>
