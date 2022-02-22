@@ -1,12 +1,11 @@
-
-.modal-container{
+.modal-container {
     display: none;
     justify-content: center;
     align-items: flex-start;
 
     position: fixed;
     top: 0;
-    left: 0 ;
+    left: 0;
 
     width: 100%;
     height: 100%;
@@ -17,16 +16,16 @@
     background-color: var(--COLOR-BLACK-ALPHA);
 }
 
-.modal-active{
+.modal-active {
     display: flex;
 }
 
-.modal-center{
+.modal-center {
     justify-content: center;
     align-items: center;
 }
 
-.modal-close{
+.modal-close {
     font-size: 2rem;
     /* color: var(--GREY); */
     position: absolute;
