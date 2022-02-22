@@ -1,0 +1,35 @@
+
+.modal-container{
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    left: 0 ;
+
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    padding: 5rem;
+
+    backdrop-filter: blur(4px);
+    background-color: var(--COLOR-BLACK-ALPHA);
+}
+
+.modal-active{
+    display: flex;
+}
+
+.modal-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-close{
+    font-size: 2rem;
+    /* color: var(--GREY); */
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}

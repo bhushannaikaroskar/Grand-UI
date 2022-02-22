@@ -57,17 +57,20 @@ switch(value) {
     case "navbar":
         activeTab(componentList,arrayOfListItems[10])
         break;
-    case "ratings":
+    case "modal":
         activeTab(componentList,arrayOfListItems[11])
         break;
-    case "toast":
+    case "ratings":
         activeTab(componentList,arrayOfListItems[12])
         break;
-    case "grid":
+    case "toast":
         activeTab(componentList,arrayOfListItems[13])
         break;
-    case "slider":
+    case "grid":
         activeTab(componentList,arrayOfListItems[14])
+        break;
+    case "slider":
+        activeTab(componentList,arrayOfListItems[15])
         break;
     default:
         activeTab(componentList,arrayOfListItems[1]);
@@ -103,3 +106,28 @@ if(theme === "dark"){
 }
 
 toggleThemeButton.addEventListener("click",toggleTheme)
+
+
+// MODAL LOGIC
+
+const modalContainer = document.querySelectorAll(".modal-container");
+modalContainer.forEach((element,index)=>{
+    const closeButtons = element.querySelectorAll(".modal-close");
+    closeButtons.forEach((close)=>{
+        close.addEventListener("click",()=>{
+            element.classList.remove("modal-active")
+        })
+    })
+})
+
+const modalDisplay = document.querySelector("#modal-display");
+const modalCenterDisplay = document.querySelector("#modal-center-display");
+
+modalDisplay.addEventListener("click",()=>{
+    modalDisplay.nextElementSibling.classList.add("modal-active")
+})
+
+modalCenterDisplay.addEventListener("click",()=>{
+    modalCenterDisplay.nextElementSibling.classList.add("modal-active")
+})
+

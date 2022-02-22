@@ -4,10 +4,7 @@
 
 html {
     scroll-behavior: smooth;
-}
-*{
     color: var(--OFF-BLACK);
-
 }
 
 /* DARK MODE */
@@ -288,38 +285,38 @@ html[data-theme="dark"] .landing{
 
 /* GRID EXAMPLE ELEMENTS */
 
-.grid-element-1{
+.element-1{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10rem;
     width: 15rem;
     font-size: 1.6rem;
-    background-color: var(--GREY);
+    background-color: var(--LIGHT-GREY);
     border: 1px solid var(--OFF-BLACK);
     border-radius: 3px;
 }
 
-.grid-element-2{
+.element-2{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10rem;
     width: 100%;
     font-size: 1.6rem;
-    background-color: var(--GREY);
+    background-color: var(--LIGHT-GREY);
     border: 1px solid var(--OFF-BLACK);
     border-radius: 3px;
 }
 
-.grid-element-3{
+.element-3{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 20rem;
     width: 10rem;
     font-size: 1.6rem;
-    background-color: var(--GREY);
+    background-color: var(--LIGHT-GREY);
     border: 1px solid var(--OFF-BLACK);
     border-radius: 3px;
 }

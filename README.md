@@ -184,6 +184,15 @@ Check out about Navigation: [https://grand-ui.netlify.app/getting-started/docume
 
 <hr>
 
+### Modal
+
+Modal can be used for different purposes which is kind of a popup boxes that appear on screen. These modals usually require some actions to cancel or handle them. 
+
+
+Check out about Modal: [https://grand-ui.netlify.app/getting-started/documentation.html#modal](https://grand-ui.netlify.app/getting-started/documentation.html#modal)
+
+<hr>
+
 ### Ratings
 
 Star Ratings are used in many places like while filtering out products or while giving out reviews. Grand UI majorly provides with two types of rating in different color:

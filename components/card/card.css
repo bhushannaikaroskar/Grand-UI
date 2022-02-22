@@ -241,7 +241,6 @@
 
 .text-card {
     min-height: auto;
-    max-height: auto;
     height: revert;
 }
 
@@ -253,4 +252,5 @@
     font-size: 1.5rem;
     color: var(--DARK-GREY);
     -webkit-line-clamp: unset;
+    height: auto;
 }
