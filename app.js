@@ -82,6 +82,25 @@ const value = arr[1];
         break;
   }
 
+
+// RESPONSIVE WEBSITE 
+
+const hamburgerButton = document.querySelector("#doc-ham");
+const sidebar = document.querySelector(".doc-sidebar");
+
+hamburgerButton.addEventListener("click",()=>{
+    if(sidebar.classList.contains("sidebar-hidden")){
+        sidebar.classList.remove("sidebar-hidden")
+    }else{
+        sidebar.classList.add("sidebar-hidden")
+
+    }
+})
+
+arrayOfListItems.forEach((element)=>{
+    element.addEventListener("click",(e)=>sidebar.classList.add("sidebar-hidden"))
+})
+
 //   DARK MODE LOGIC
 
 let theme = localStorage.getItem("data-theme");
@@ -138,4 +157,3 @@ modalDisplay.addEventListener("click",()=>{
 modalCenterDisplay.addEventListener("click",()=>{
     modalCenterDisplay.nextElementSibling.classList.add("modal-active")
 })
-
