@@ -145,16 +145,17 @@ pre[class*="language-"] {
 .toolbar button{
 	border: none;
 	background-color: var(--PRIMARY-200);
-	color: var(--OFF-BLACK);
+	color: var(--COLOR-TEXT-BLACK);
 	padding:2px 5px ;
 	border-radius: 2px;
+	font-weight: 600;
 }
 
 .toolbar:hover{
 	opacity: 1;
 }
 
-.language-markup{
+.language-markup, .language-javascript{
 	border-radius: 3px;
 	max-height: 30rem;
 	overflow-y: scroll ;
