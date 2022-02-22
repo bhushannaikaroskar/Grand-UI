@@ -89,12 +89,9 @@ const hamburgerButton = document.querySelector("#doc-ham");
 const sidebar = document.querySelector(".doc-sidebar");
 
 hamburgerButton.addEventListener("click",()=>{
-    if(sidebar.classList.contains("sidebar-hidden")){
-        sidebar.classList.remove("sidebar-hidden")
-    }else{
-        sidebar.classList.add("sidebar-hidden")
-
-    }
+    sidebar.classList.contains("sidebar-hidden")
+    ? sidebar.classList.remove("sidebar-hidden") 
+    :sidebar.classList.add("sidebar-hidden")
 })
 
 arrayOfListItems.forEach((element)=>{
