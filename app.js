@@ -16,6 +16,11 @@ const activeTab = (list,listItem) =>{
     document.querySelector(listItem.querySelector("a").getAttribute("href")).style.display = "block";
 }
 
+const objectOfListItems = Object.values(arrayOfListItems).reduce((obj,element)=>{
+    const key = element.querySelector("a").getAttribute("href").split("#")[1]
+    return {...obj,[key]:element}
+},{})
+
 arrayOfListItems.forEach((element)=>{
     element.addEventListener("click",(e)=>activeTab(componentList,element))
 })
@@ -23,54 +28,54 @@ arrayOfListItems.forEach((element)=>{
 const arr = window.location.href.split("#");
 const value = arr[1];
 
-switch(value) {
+  switch(value) {
     case "avatar":
-        activeTab(componentList,arrayOfListItems[1])
+        activeTab(componentList,objectOfListItems["avatar"])
         break;
     case "installation":
-        activeTab(componentList,arrayOfListItems[0])
+        activeTab(componentList,objectOfListItems["installation"])
         break;
     case "alert":
-        activeTab(componentList,arrayOfListItems[2])
+        activeTab(componentList,objectOfListItems["alert"])
         break;
     case "badge":
-        activeTab(componentList,arrayOfListItems[3])
+        activeTab(componentList,objectOfListItems["badge"])
         break;
     case "button":
-        activeTab(componentList,arrayOfListItems[4])
+        activeTab(componentList,objectOfListItems["button"])
         break;
     case "cards":
-        activeTab(componentList,arrayOfListItems[5])
+        activeTab(componentList,objectOfListItems["cards"])
         break;
     case "image":
-        activeTab(componentList,arrayOfListItems[6])
+        activeTab(componentList,objectOfListItems["image"])
         break;
     case "input":
-        activeTab(componentList,arrayOfListItems[7])
+        activeTab(componentList,objectOfListItems["input"])
         break;
     case "text-utilities":
-        activeTab(componentList,arrayOfListItems[8])
+        activeTab(componentList,objectOfListItems["text-utilities"])
         break;
     case "lists":
-        activeTab(componentList,arrayOfListItems[9])
+        activeTab(componentList,objectOfListItems["lists"])
         break;
     case "navbar":
-        activeTab(componentList,arrayOfListItems[10])
+        activeTab(componentList,objectOfListItems["navbar"])
         break;
     case "modal":
-        activeTab(componentList,arrayOfListItems[11])
+        activeTab(componentList,objectOfListItems["modal"])
         break;
     case "ratings":
-        activeTab(componentList,arrayOfListItems[12])
+        activeTab(componentList,objectOfListItems["ratings"])
         break;
     case "toast":
-        activeTab(componentList,arrayOfListItems[13])
+        activeTab(componentList,objectOfListItems["toast"])
         break;
     case "grid":
-        activeTab(componentList,arrayOfListItems[14])
+        activeTab(componentList,objectOfListItems["grid"])
         break;
     case "slider":
-        activeTab(componentList,arrayOfListItems[15])
+        activeTab(componentList,objectOfListItems["slider"])
         break;
     default:
         activeTab(componentList,arrayOfListItems[1]);

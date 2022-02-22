@@ -1,7 +1,6 @@
 
 let theme = localStorage.getItem("data-theme");
 const toggleThemeButton = document.querySelector("#toggle-mode");
-console.log(toggleThemeButton)
 
 const toggleTheme = ()=>{
     theme = localStorage.getItem("data-theme")
