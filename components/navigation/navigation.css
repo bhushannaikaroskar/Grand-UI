@@ -1,14 +1,25 @@
 
 .navbar{
     width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--WHITE);
-    padding: 5px 2rem 0 2rem ;
+    padding: 5px 2rem ;
+
+    display: grid;
+    grid-template-areas: "logo ... search nav-items";
+    gap: 10px;
+}
+
+.navbar-responsive{
+    display: grid;
+    grid-template-areas: "logo ... search nav-items";
+
 }
 
 .nav-logo{
+    width: 100%;
+    grid-area: logo;
     display: flex;
     height: 5rem;
 }
@@ -18,6 +29,8 @@
 }
 
 .nav-search-container{
+    width: 100%;
+    grid-area: search;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,4 +56,49 @@
 
 .nav-search:focus-visible{
     outline: 0px solid var(--DARK-GREY);
+}
+
+
+
+.nav-items{
+    grid-area: nav-items;
+    width: min-content;
+    display: flex;
+}
+
+
+.nav-hamburger{
+    display: none;
+}
+
+
+
+@media screen and (max-width:770px) {
+    
+    .navbar-responsive{
+        grid-template-areas: 
+            "logo ... ... nav-items"
+            "search search search search";
+            padding: 5px 2rem 1rem;
+    }
+    
+}
+
+@media screen and (max-width:500px) {
+    
+    .navbar-responsive{
+        grid-template-areas: 
+            "logo ... ... nav-items"
+            "search search search search";
+            padding: 5px 2rem 1.2rem;
+
+    }
+
+    .navbar-responsive .nav-items .btn{
+        display: none;
+    }
+
+    .navbar-responsive .nav-items .nav-hamburger  {
+        display: block;
+    }
 }

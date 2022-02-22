@@ -196,44 +196,6 @@ html[data-theme="dark"] .doc-body, html[data-theme="dark"] .landing {
     font-weight: 700;
 }
 
-@media only screen and (min-width: 1900px) {
-    :root {
-        font-size: 75%;
-    }
-    .doc-body {
-        grid-template-columns: auto 23rem 100rem auto;
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .doc-body {
-        grid-template-columns: auto 23rem 100rem auto;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .hero-section {
-        flex-direction: column-reverse;
-    }
-
-    .hero-img {
-        width: 80%;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    :root {
-        font-size: 50%;
-    }
-
-    .hero-section {
-        flex-direction: column-reverse;
-    }
-
-    .hero-img {
-        width: 100%;
-    }
-}
 
 .doc-scroller {
     -ms-overflow-style: none;
@@ -305,4 +267,47 @@ html[data-theme="dark"] .doc-body, html[data-theme="dark"] .landing {
     background-color: var(--LIGHT-GREY);
     border: 1px solid var(--OFF-BLACK);
     border-radius: 3px;
+}
+
+
+
+@media only screen and (min-width: 1900px) {
+    :root {
+        font-size: 75%;
+    }
+    .doc-body {
+        grid-template-columns: auto 23rem 100rem auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .doc-body {
+        grid-template-columns: auto 23rem 100rem auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-img {
+        width: 80%;
+    }
+
+
+}
+
+@media only screen and (max-width: 480px) {
+    :root {
+        font-size: 50%;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
 }
